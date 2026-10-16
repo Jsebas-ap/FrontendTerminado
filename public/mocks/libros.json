@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "titulo": "12 Reglas para Vivir: Un Antídoto al Caos",
+    "autor": "Jordan B. Peterson",
+    "descripcion": "En \"12 Reglas para Vivir\", Jordan B. Peterson fusiona psicología y filosofía para ofrecer una guía práctica. Propone que, mediante la responsabilidad individual y el orden, es posible enfrentar el caos y el sufrimiento, logrando una vida con propósito.",
+    "editorial": "Planeta",
+    "fechaPublicacion": "2018-06-01",
+    "genero": "Autoayuda",
+    "imagenUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/b9/96/b996c24480ce5faaa24c84fbf9a83d58.jpg",
+    "isbn": "9788408193302",
+    "slug": "12-reglas-para-vivir-un-antdoto-al-caos",
+    "ejemplares": [
+      {
+        "id": 4,
+        "codigoEjemplar": "12RPV-93302-001",
+        "estado": "RESERVADO",
+        "ubicacionId": 3,
+        "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
+        "libroId": 1,
+        "reservas": [
+          { "id": 1, "estado": "DEVUELTO" },
+          { "id": 3, "estado": "PENDIENTE" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "A Sangre Fría",
+    "autor": "Truman Capote",
+    "descripcion": "En 1959, Truman Capote reconstruye el brutal asesinato de la familia Clutter en Kansas. A través de un estilo periodístico magistral, explora la mente de los criminales y el impacto del horror en una pequeña comunidad. Una obra maestra del género.",
+    "editorial": "Anagrama",
+    "fechaPublicacion": "1987-12-01",
+    "genero": "Histórico",
+    "imagenUrl": "https://cms.anagrama-ed.es/uploads/media/portadas/0001/32/thumb_31984_portadas_big.jpeg",
+    "isbn": "9788433928184",
+    "slug": "a-sangre-fra",
+    "ejemplares": [
+      {
+        "id": 2,
+        "codigoEjemplar": "ASF-ANA-001",
+        "estado": "EN_REPARACION",
+        "ubicacionId": 9,
+        "ubicacion": { "id": 9, "estante": "2", "posicion": "D" },
+        "libroId": 2,
+        "reservas": []
+      },
+      {
+        "id": 7,
+        "codigoEjemplar": "ASF-28184-002",
+        "estado": "DISPONIBLE",
+        "ubicacionId": 3,
+        "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
+        "libroId": 2,
+        "reservas": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Si Esto es un Hombre",
+    "autor": "Primo Levi",
+    "descripcion": "En \"Si esto es un hombre\", Primo Levi narra con precisión sobrecogedora su supervivencia en Auschwitz. Más que un testimonio del horror, es un análisis lúcido y profundo sobre la deshumanización y la resistencia de la dignidad humana en el abismo.",
+    "editorial": "Planeta",
+    "fechaPublicacion": "1947-01-05",
+    "genero": "Histórico",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9786280004891_akfcj6dpqsjbhiz1.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9786280004891",
+    "slug": "si-esto-es-un-hombre",
+    "ejemplares": [
+      {
+        "id": 6,
+        "codigoEjemplar": "SEEUH-04891-001",
+        "estado": "RESERVADO",
+        "ubicacionId": 7,
+        "ubicacion": { "id": 7, "estante": "2", "posicion": "B" },
+        "libroId": 3,
+        "reservas": [
+          { "id": 9, "estado": "PENDIENTE" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "El Pez en el Agua",
+    "autor": "Mario Vargas Llosa",
+    "descripcion": "\"El pez en el agua\" combina las memorias de la frustrada campaña presidencial de Mario Vargas Llosa en 1990 con el relato de sus años de formación. Un retrato íntimo que entrelaza la vocación literaria con la compleja realidad política peruana.",
+    "editorial": "DeBolsillo",
+    "fechaPublicacion": "1993-03-05",
+    "genero": "Biografía",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9786124346613_5elhdcekczqcykuy.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9786124346613",
+    "slug": "el-pez-en-el-agua",
+    "ejemplares": [
+      {
+        "id": 1,
+        "codigoEjemplar": "EPA-DBS-001",
+        "estado": "RESERVADO",
+        "ubicacionId": 3,
+        "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
+        "libroId": 4,
+        "reservas": [
+          { "id": 2, "estado": "PENDIENTE" }
+        ]
+      },
+      {
+        "id": 3,
+        "codigoEjemplar": "EPA-DBS-002",
+        "estado": "RESERVADO",
+        "ubicacionId": 3,
+        "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
+        "libroId": 4,
+        "reservas": [
+          { "id": 4, "estado": "DEVUELTO" },
+          { "id": 5, "estado": "PENDIENTE" }
+        ]
+      },
+      {
+        "id": 5,
+        "codigoEjemplar": "PEEA-46613-003",
+        "estado": "DISPONIBLE",
+        "ubicacionId": 3,
+        "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
+        "libroId": 4,
+        "reservas": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "El Libro de la Selva",
+    "autor": "Rudyard Kipling",
+    "descripcion": "Mowgli, un niño criado por lobos en la selva india, aprende la ley de la naturaleza junto al oso Baloo y la pantera Bagheera. Juntos enfrentarán grandes peligros, incluido el temible tigre Shere Khan, en un viaje de identidad y supervivencia.",
+    "editorial": "Austral",
+    "fechaPublicacion": "2018-09-05",
+    "genero": "Aventura",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9788408160113_vy9wyjjfnmfgybws.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9788408160113",
+    "slug": "el-libro-de-la-selva",
+    "ejemplares": [
+      {
+        "id": 8,
+        "codigoEjemplar": "LDLS-60113-001",
+        "estado": "RESERVADO",
+        "ubicacionId": 13,
+        "ubicacion": { "id": 13, "estante": "3", "posicion": "C" },
+        "libroId": 5,
+        "reservas": [
+          { "id": 6, "estado": "PENDIENTE" },
+          { "id": 7, "estado": "PENDIENTE" },
+          { "id": 8, "estado": "PENDIENTE" }
+        ]
+      }
+    ]
+  }
+]

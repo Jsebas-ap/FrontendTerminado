@@ -4,7 +4,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ToastService } from '../../../shared/toast.service';
+import { ToastService } from '../../../controllers/shared/toast.service';
 
 @Component({
   selector: 'app-registrar',

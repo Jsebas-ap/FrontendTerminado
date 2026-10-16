@@ -1,0 +1,257 @@
+[
+  {
+    "id": 1,
+    "username": "andre@gmail.com",
+    "nombres": "Andre",
+    "apellidos": "Lagos",
+    "dni": "72155654",
+    "telefono": "965322221",
+    "direccion": "Av. Los Girasoles 123",
+    "genero": "masculino",
+    "fechaNacimiento": "2003-01-04",
+    "enabled": true,
+    "roles": [{ "id": 1, "name": "ROLE_ADMIN" }],
+    "reservas": [
+      {
+        "id": 3,
+        "fechaReserva": "2026-06-23",
+        "fechaEstimadaDevolucion": "2026-06-30",
+        "fechaRealDevolucion": null,
+        "estado": "PENDIENTE",
+        "ejemplar": {
+          "id": 4,
+          "codigoEjemplar": "12RPV-93302-001",
+          "libro": {
+            "id": 1,
+            "titulo": "12 Reglas para Vivir: Un Antídoto al Caos",
+            "autor": "Jordan B. Peterson",
+            "editorial": "Planeta"
+          }
+        }
+      },
+      {
+        "id": 5,
+        "fechaReserva": "2026-06-23",
+        "fechaEstimadaDevolucion": "2026-06-30",
+        "fechaRealDevolucion": null,
+        "estado": "PENDIENTE",
+        "ejemplar": {
+          "id": 3,
+          "codigoEjemplar": "EPA-DBS-002",
+          "libro": {
+            "id": 4,
+            "titulo": "El Pez en el Agua",
+            "autor": "Mario Vargas Llosa",
+            "editorial": "DeBolsillo"
+          }
+        }
+      },
+      {
+        "id": 7,
+        "fechaReserva": "2026-07-21",
+        "fechaEstimadaDevolucion": "2026-08-04",
+        "fechaRealDevolucion": null,
+        "estado": "PENDIENTE",
+        "ejemplar": {
+          "id": 8,
+          "codigoEjemplar": "LDLS-60113-001",
+          "libro": {
+            "id": 5,
+            "titulo": "El Libro de la Selva",
+            "autor": "Rudyard Kipling",
+            "editorial": "Austral"
+          }
+        }
+      },
+      {
+        "id": 8,
+        "fechaReserva": "2026-07-28",
+        "fechaEstimadaDevolucion": "2026-08-11",
+        "fechaRealDevolucion": null,
+        "estado": "PENDIENTE",
+        "ejemplar": {
+          "id": 8,
+          "codigoEjemplar": "LDLS-60113-001",
+          "libro": {
+            "id": 5,
+            "titulo": "El Libro de la Selva",
+            "autor": "Rudyard Kipling",
+            "editorial": "Austral"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "username": "usuario@gmail.com",
+    "nombres": "Carlos",
+    "apellidos": "Lector Pérez",
+    "dni": "76543210",
+    "telefono": "987654321",
+    "direccion": "Av. Los Sauces 123, Ate",
+    "genero": "masculino",
+    "fechaNacimiento": "2000-05-15",
+    "enabled": true,
+    "roles": [{ "id": 2, "name": "ROLE_USER" }],
+    "reservas": [
+      {
+        "id": 1,
+        "fechaReserva": "2026-05-26",
+        "fechaEstimadaDevolucion": "2026-06-02",
+        "fechaRealDevolucion": "2026-06-18",
+        "estado": "DEVUELTO",
+        "ejemplar": {
+          "id": 4,
+          "codigoEjemplar": "12RPV-93302-001",
+          "libro": {
+            "id": 1,
+            "titulo": "12 Reglas para Vivir: Un Antídoto al Caos",
+            "autor": "Jordan B. Peterson",
+            "editorial": "Planeta"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "fechaReserva": "2026-06-23",
+        "fechaEstimadaDevolucion": "2026-06-30",
+        "fechaRealDevolucion": null,
+        "estado": "PENDIENTE",
+        "ejemplar": {
+          "id": 1,
+          "codigoEjemplar": "EPA-DBS-001",
+          "libro": {
+            "id": 4,
+            "titulo": "El Pez en el Agua",
+            "autor": "Mario Vargas Llosa",
+            "editorial": "DeBolsillo"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "username": "prueba3@gmail.com",
+    "nombres": "Camila",
+    "apellidos": "Montes",
+    "dni": "03655421",
+    "telefono": "965322221",
+    "direccion": "Av. Los Girasoles 123",
+    "genero": "femenino",
+    "fechaNacimiento": "1986-07-30",
+    "enabled": true,
+    "roles": [{ "id": 2, "name": "ROLE_USER" }],
+    "reservas": [
+      {
+        "id": 4,
+        "fechaReserva": "2026-06-22",
+        "fechaEstimadaDevolucion": "2026-06-29",
+        "fechaRealDevolucion": "2026-06-18",
+        "estado": "DEVUELTO",
+        "ejemplar": {
+          "id": 3,
+          "codigoEjemplar": "EPA-DBS-002",
+          "libro": {
+            "id": 4,
+            "titulo": "El Pez en el Agua",
+            "autor": "Mario Vargas Llosa",
+            "editorial": "DeBolsillo"
+          }
+        }
+      },
+      {
+        "id": 6,
+        "fechaReserva": "2026-06-30",
+        "fechaEstimadaDevolucion": "2026-07-14",
+        "fechaRealDevolucion": null,
+        "estado": "PENDIENTE",
+        "ejemplar": {
+          "id": 8,
+          "codigoEjemplar": "LDLS-60113-001",
+          "libro": {
+            "id": 5,
+            "titulo": "El Libro de la Selva",
+            "autor": "Rudyard Kipling",
+            "editorial": "Austral"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "username": "rodrigo@gmail.com",
+    "nombres": "Rodrigo",
+    "apellidos": "Rodruiguez",
+    "dni": "75201156",
+    "telefono": "965200125",
+    "direccion": "Carretera Central 456, Ate",
+    "genero": "otro",
+    "fechaNacimiento": "2007-09-03",
+    "enabled": true,
+    "roles": [{ "id": 2, "name": "ROLE_USER" }],
+    "reservas": []
+  },
+  {
+    "id": 13,
+    "username": "prueba7@gmail.com",
+    "nombres": "Lucia",
+    "apellidos": "Gomez",
+    "dni": "45201658",
+    "telefono": "965420210",
+    "direccion": "Av. Los Girasoles 123",
+    "genero": "femenino",
+    "fechaNacimiento": "2007-10-14",
+    "enabled": true,
+    "roles": [{ "id": 2, "name": "ROLE_USER" }],
+    "reservas": [
+      {
+        "id": 9,
+        "fechaReserva": "2026-07-29",
+        "fechaEstimadaDevolucion": "2026-08-12",
+        "fechaRealDevolucion": null,
+        "estado": "PENDIENTE",
+        "ejemplar": {
+          "id": 6,
+          "codigoEjemplar": "SEEUH-04891-001",
+          "libro": {
+            "id": 3,
+            "titulo": "Si Esto es un Hombre",
+            "autor": "Primo Levi",
+            "editorial": "Planeta"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "username": "biblio@gmail.com",
+    "nombres": "María",
+    "apellidos": "Bibliotecaria Gómez",
+    "dni": "44556677",
+    "telefono": "912345678",
+    "direccion": "Biblioteca Central de Ate",
+    "genero": "femenino",
+    "fechaNacimiento": "1988-08-20",
+    "enabled": true,
+    "roles": [{ "id": 3, "name": "ROLE_BIBLIOTECARIO" }],
+    "reservas": []
+  },
+  {
+    "id": 15,
+    "username": "admin@gmail.com",
+    "nombres": "Alberto",
+    "apellidos": "Administrador Ramos",
+    "dni": "11223344",
+    "telefono": "998877665",
+    "direccion": "Oficina Central de Sistemas",
+    "genero": "masculino",
+    "fechaNacimiento": "1985-03-10",
+    "enabled": true,
+    "roles": [{ "id": 1, "name": "ROLE_ADMIN" }],
+    "reservas": []
+  }
+]

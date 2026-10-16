@@ -1,0 +1,20 @@
+[
+  { "id": 1, "estante": "1", "posicion": "A" },
+  { "id": 2, "estante": "1", "posicion": "B" },
+  { "id": 3, "estante": "1", "posicion": "C" },
+  { "id": 4, "estante": "1", "posicion": "D" },
+  { "id": 5, "estante": "1", "posicion": "E" },
+  { "id": 6, "estante": "2", "posicion": "A" },
+  { "id": 7, "estante": "2", "posicion": "B" },
+  { "id": 8, "estante": "2", "posicion": "C" },
+  { "id": 9, "estante": "2", "posicion": "D" },
+  { "id": 10, "estante": "2", "posicion": "E" },
+  { "id": 11, "estante": "3", "posicion": "A" },
+  { "id": 12, "estante": "3", "posicion": "B" },
+  { "id": 13, "estante": "3", "posicion": "C" },
+  { "id": 14, "estante": "3", "posicion": "D" },
+  { "id": 15, "estante": "3", "posicion": "E" },
+  { "id": 16, "estante": "4", "posicion": "A" },
+  { "id": 17, "estante": "4", "posicion": "B" },
+  { "id": 18, "estante": "4", "posicion": "C" }
+]
