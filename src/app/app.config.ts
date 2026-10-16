@@ -3,7 +3,7 @@ import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
 import { routes } from './app.routes';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { TokenInterceptor } from './interceptors/token-interceptor';
+import { TokenInterceptor } from './shared/interceptors/token-interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [

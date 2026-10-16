@@ -1,24 +1,23 @@
 import { Routes } from '@angular/router';
-import { Libros } from './dashboard/libros/libros';
-import { Dashboard } from './dashboard/dashboard/dashboard';
-import { Principal } from './paginas/principal/principal';
-import { DashboardNavbar } from './dashboard/dashboard-navbar/dashboard-navbar';
-import { PrincipalNavbarComponent } from './paginas/principal-navbar/principal-navbar';
-import { Catalogo } from './paginas/catalogo/catalogo';
-import { Eventos } from './paginas/eventos/eventos';
-import { Detalle } from './paginas/detalle/detalle';
-import { Prestamo } from './paginas/prestamo/prestamo';
-import { Registrar } from './paginas/registrar/registrar';
-import { CuentaComponent } from './paginas/cuenta/cuenta';
-import { MisReservas } from './paginas/mis-reservas/mis-reservas';
-import { Ejemplares } from './dashboard/ejemplares/ejemplares';
-import { Usuarios } from './dashboard/usuarios/usuarios';
-import { Reservas } from './dashboard/reservas/reservas';
-import { Historial } from './dashboard/historial/historial';
-import { Atrasadas } from './dashboard/atrasadas/atrasadas';
-import { AdminGuard } from './guards/admin-guard';
-import { Expositores } from './dashboard/expositores/expositores';
-import { Actividades } from './dashboard/actividades/actividades';
+import { Libros } from './views/dashboard/libros/libros';
+import { Dashboard } from './views/dashboard/dashboard/dashboard';
+import { Principal } from './views/paginas/principal/principal';
+import { DashboardNavbar } from './views/dashboard/dashboard-navbar/dashboard-navbar';
+import { PrincipalNavbarComponent } from './views/paginas/principal-navbar/principal-navbar';
+import { Catalogo } from './views/paginas/catalogo/catalogo';
+import { Detalle } from './views/paginas/detalle/detalle';
+import { Prestamo } from './views/paginas/prestamo/prestamo';
+import { Registrar } from './views/paginas/registrar/registrar';
+import { CuentaComponent } from './views/paginas/cuenta/cuenta';
+import { MisReservas } from './views/paginas/mis-reservas/mis-reservas';
+import { Ejemplares } from './views/dashboard/ejemplares/ejemplares';
+import { Usuarios } from './views/dashboard/usuarios/usuarios';
+import { Reservas } from './views/dashboard/reservas/reservas';
+import { Historial } from './views/dashboard/historial/historial';
+import { Atrasadas } from './views/dashboard/atrasadas/atrasadas';
+import { AdminGuard } from './shared/guards/admin-guard';
+import { StaffGuard } from './shared/guards/staff-guard';
+
 export const routes: Routes = [
     {
         path: '',
@@ -31,35 +30,14 @@ export const routes: Routes = [
             {
                 path: 'catalogo',
                 component: Catalogo
-            }
-            ,
-            {
-                path: 'eventos',
-                component: Eventos
             },
             {
-                path: 'eventos/:id',
-                loadComponent: () => import('./paginas/actividad-detalle/actividad-detalle').then(m => m.ActividadDetalle)
+                path: 'detalle/:slug',
+                loadComponent: () => import('./views/paginas/detalle/detalle').then(m => m.Detalle)
             },
-
-            { path: 'detalle/:slug', loadComponent: () => import('./paginas/detalle/detalle').then(m => m.Detalle) }
-            ,
-            {
-                path: 'prestamo',
-                component: Prestamo
-            }
-            ,
             {
                 path: 'prestamo/:slug',
-                loadComponent: () => import('./paginas/prestamo/prestamo').then(m => m.Prestamo)
-            },
-            {
-                path: 'detalle',
-                component: Detalle
-            },
-            {
-                path: 'prestamo',
-                component: Prestamo
+                loadComponent: () => import('./views/paginas/prestamo/prestamo').then(m => m.Prestamo)
             },
             {
                 path: 'registrar',
@@ -75,19 +53,16 @@ export const routes: Routes = [
             },
             {
                 path: 'faq',
-                loadComponent: () => import('./paginas/faq/faq').then(m => m.FaqComponent)
+                loadComponent: () => import('./views/paginas/faq/faq').then(m => m.FaqComponent)
             }
         ]
-    }
-    ,
+    },
 
-
-
-    //dashboard
+    // dashboard (Administrador y Bibliotecario)
     {
         path: 'dashboard',
         component: DashboardNavbar,
-        canActivate: [AdminGuard],
+        canActivate: [StaffGuard],
         children: [
             {
                 path: '',
@@ -104,23 +79,20 @@ export const routes: Routes = [
             {
                 path: 'usuarios',
                 component: Usuarios
-            }, {
-                path: 'expositores',
-                component: Expositores
-            }, {
-                path: 'actividades',
-                component: Actividades
-            }, {
+            },
+            {
                 path: 'reservas',
                 component: Reservas
-            }, {
+            },
+            {
                 path: 'historial',
-                component: Historial
-            }, {
+                component: Historial,
+                canActivate: [AdminGuard] // Reportes: solo Administrador
+            },
+            {
                 path: 'atrasadas',
                 component: Atrasadas
             }
         ]
     }
-
 ];

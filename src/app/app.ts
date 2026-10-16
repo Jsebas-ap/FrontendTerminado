@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ToastService } from './services/toast.service';
+import { ToastService } from './shared/toast.service';
 
 @Component({
   selector: 'app-root',
