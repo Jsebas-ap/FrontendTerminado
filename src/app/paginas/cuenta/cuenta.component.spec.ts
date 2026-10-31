@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
 
 import { CuentaComponent } from './cuenta.component';
 
@@ -8,7 +10,8 @@ describe('CuentaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CuentaComponent]
+      imports: [CuentaComponent],
+      providers: [provideHttpClient(), provideRouter([])]
     })
     .compileComponents();
 

@@ -28,7 +28,7 @@
     </div>
 
     <!-- Sección Usuario -->
-    <div class="mb-3 info-block">
+    <div class="mb-3 info-block" *ngIf="usuario">
       <h6 class="bg-light text-dark text-center py-1 border rounded">Usuario</h6>
       <p>Nombre y Apellidos: <span>{{ usuario.nombres }} {{ usuario.apellidos }}</span></p>
       <p>DNI: <span>{{ usuario.dni }}</span></p>

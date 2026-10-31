@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
 
 import { PrincipalNavbarComponent } from './principal-navbar.component';
 
@@ -8,7 +10,8 @@ describe('PrincipalNavbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PrincipalNavbarComponent]
+      imports: [PrincipalNavbarComponent],
+      providers: [provideHttpClient(), provideRouter([])]
     })
       .compileComponents();
 

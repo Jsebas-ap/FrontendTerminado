@@ -1,6 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
+import { of } from 'rxjs';
 
 import { PrestamoComponent } from './prestamo.component';
+import { AuthService } from '../../services/auth.service';
 
 describe('PrestamoComponent', () => {
   let component: PrestamoComponent;
@@ -8,7 +12,12 @@ describe('PrestamoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PrestamoComponent]
+      imports: [PrestamoComponent],
+      providers: [
+        provideHttpClient(),
+        provideRouter([]),
+        { provide: AuthService, useValue: { user$: of({ id: 1, nombres: 'Usuario', apellidos: 'De Prueba', username: 'test@test.com' }) } }
+      ]
     })
     .compileComponents();
 

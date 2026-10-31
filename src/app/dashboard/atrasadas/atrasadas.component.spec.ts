@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
 
 import { AtrasadasComponent } from './atrasadas.component';
 
@@ -8,7 +9,8 @@ describe('AtrasadasComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AtrasadasComponent]
+      imports: [AtrasadasComponent],
+      providers: [provideHttpClient()]
     })
     .compileComponents();
 
