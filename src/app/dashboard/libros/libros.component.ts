@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { LibrosService } from '../../../services/libros.service';
-import { AuthService } from '../../../services/auth.service';
+import { LibrosService } from '../../services/libros.service';
+import { AuthService } from '../../services/auth.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
 declare var bootstrap: any;
 
 @Component({
   selector: 'app-libros',
-  standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './libros.html',
-  styleUrl: './libros.scss'
+  templateUrl: './libros.component.html',
+  styleUrl: './libros.component.scss'
 })
-export class Libros implements OnInit {
+export class LibrosComponent implements OnInit {
   libros: any[] = [];
   terminoBusqueda: string = '';
   libroEditando: any = null;

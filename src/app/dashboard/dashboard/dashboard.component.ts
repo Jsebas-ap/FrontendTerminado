@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuariosService } from '../../../services/usuarios.service';
-import { EjemplaresService } from '../../../services/ejemplares.service';
-import { ReservasService } from '../../../services/reservas.service';
-import { Usuario } from '../../../models/usuario.model';
-import { Ejemplar } from '../../../models/ejemplar.model';
-import { Reserva } from '../../../models/reserva.model';
+import { UsuariosService } from '../../services/usuarios.service';
+import { EjemplaresService } from '../../services/ejemplares.service';
+import { ReservasService } from '../../services/reservas.service';
+import { Usuario } from '../../models/usuario.model';
+import { Ejemplar } from '../../models/ejemplar.model';
+import { Reserva } from '../../models/reserva.model';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
   imports: [CommonModule],
-  templateUrl: './dashboard.html',
-  styleUrl: './dashboard.scss'
+  templateUrl: './dashboard.component.html',
+  styleUrl: './dashboard.component.scss'
 })
-export class Dashboard implements OnInit {
+export class DashboardComponent implements OnInit {
   usuarios: Usuario[] = [];
   ejemplares: Ejemplar[] = [];
   reservasPendientes: Reserva[] = [];

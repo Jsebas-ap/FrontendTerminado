@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ReservasService } from '../../../services/reservas.service';
+import { ReservasService } from '../../services/reservas.service';
 import { CommonModule } from '@angular/common';
-import { Reserva } from '../../../models/reserva.model';
+import { Reserva } from '../../models/reserva.model';
 
 @Component({
   selector: 'app-atrasadas',
   imports: [CommonModule],
-  templateUrl: './atrasadas.html',
-  styleUrl: './atrasadas.scss'
+  templateUrl: './atrasadas.component.html',
+  styleUrl: './atrasadas.component.scss'
 })
-export class Atrasadas implements OnInit {
+export class AtrasadasComponent implements OnInit {
   reservas: Reserva[] = [];
 
   constructor(private reservasService: ReservasService) { }

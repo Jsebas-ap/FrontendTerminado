@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { EjemplaresService } from '../../../services/ejemplares.service';
-import { LibrosService } from '../../../services/libros.service';
-import { AuthService } from '../../../services/auth.service';
-import { Ejemplar, EstadoEjemplar, Ubicacion } from '../../../models/ejemplar.model';
+import { EjemplaresService } from '../../services/ejemplares.service';
+import { LibrosService } from '../../services/libros.service';
+import { AuthService } from '../../services/auth.service';
+import { Ejemplar, EstadoEjemplar, Ubicacion } from '../../models/ejemplar.model';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -10,12 +10,11 @@ import { EstanteSelectorComponent } from './estante-selector/estante-selector.co
 
 @Component({
   selector: 'app-ejemplares',
-  standalone: true,
   imports: [CommonModule, FormsModule, EstanteSelectorComponent],
-  templateUrl: './ejemplares.html',
-  styleUrl: './ejemplares.scss'
+  templateUrl: './ejemplares.component.html',
+  styleUrl: './ejemplares.component.scss'
 })
-export class Ejemplares implements OnInit {
+export class EjemplaresComponent implements OnInit {
   ejemplares: Ejemplar[] = [];
   libros: any[] = [];
   ubicaciones: Ubicacion[] = [];

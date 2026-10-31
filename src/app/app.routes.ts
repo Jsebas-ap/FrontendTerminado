@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { Libros } from './views/dashboard/libros/libros';
-import { Dashboard } from './views/dashboard/dashboard/dashboard';
+import { LibrosComponent } from './dashboard/libros/libros.component';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { PrincipalComponent } from './paginas/principal/principal.component';
-import { DashboardNavbar } from './views/dashboard/dashboard-navbar/dashboard-navbar';
+import { DashboardNavbarComponent } from './dashboard/dashboard-navbar/dashboard-navbar.component';
 import { PrincipalNavbarComponent } from './paginas/principal-navbar/principal-navbar.component';
 import { CatalogoComponent } from './paginas/catalogo/catalogo.component';
 import { DetalleComponent } from './paginas/detalle/detalle.component';
@@ -10,11 +10,11 @@ import { PrestamoComponent } from './paginas/prestamo/prestamo.component';
 import { RegistrarComponent } from './paginas/registrar/registrar.component';
 import { CuentaComponent } from './paginas/cuenta/cuenta.component';
 import { MisReservasComponent } from './paginas/mis-reservas/mis-reservas.component';
-import { Ejemplares } from './views/dashboard/ejemplares/ejemplares';
-import { Usuarios } from './views/dashboard/usuarios/usuarios';
-import { Reservas } from './views/dashboard/reservas/reservas';
-import { Historial } from './views/dashboard/historial/historial';
-import { Atrasadas } from './views/dashboard/atrasadas/atrasadas';
+import { EjemplaresComponent } from './dashboard/ejemplares/ejemplares.component';
+import { UsuariosComponent } from './dashboard/usuarios/usuarios.component';
+import { ReservasComponent } from './dashboard/reservas/reservas.component';
+import { HistorialComponent } from './dashboard/historial/historial.component';
+import { AtrasadasComponent } from './dashboard/atrasadas/atrasadas.component';
 import { AdminGuard } from './guards/admin-guard';
 import { StaffGuard } from './guards/staff-guard';
 
@@ -61,37 +61,37 @@ export const routes: Routes = [
     // dashboard (Administrador y Bibliotecario)
     {
         path: 'dashboard',
-        component: DashboardNavbar,
+        component: DashboardNavbarComponent,
         canActivate: [StaffGuard],
         children: [
             {
                 path: '',
-                component: Dashboard
+                component: DashboardComponent
             },
             {
                 path: 'libros',
-                component: Libros
+                component: LibrosComponent
             },
             {
                 path: 'ejemplares',
-                component: Ejemplares
+                component: EjemplaresComponent
             },
             {
                 path: 'usuarios',
-                component: Usuarios
+                component: UsuariosComponent
             },
             {
                 path: 'reservas',
-                component: Reservas
+                component: ReservasComponent
             },
             {
                 path: 'historial',
-                component: Historial,
+                component: HistorialComponent,
                 canActivate: [AdminGuard] // Reportes: solo Administrador
             },
             {
                 path: 'atrasadas',
-                component: Atrasadas
+                component: AtrasadasComponent
             }
         ]
     }

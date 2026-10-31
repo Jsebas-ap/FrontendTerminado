@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuariosService } from '../../../services/usuarios.service';
+import { UsuariosService } from '../../services/usuarios.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
-import { Usuario } from '../../../models/usuario.model';
+import { Usuario } from '../../models/usuario.model';
 declare var bootstrap: any;
 
 @Component({
   selector: 'app-usuarios',
   imports: [CommonModule, FormsModule],
-  templateUrl: './usuarios.html',
-  styleUrl: './usuarios.scss'
+  templateUrl: './usuarios.component.html',
+  styleUrl: './usuarios.component.scss'
 })
-export class Usuarios implements OnInit {
+export class UsuariosComponent implements OnInit {
 
   usuarios: Usuario[] = [];
   terminoBusqueda: string = '';

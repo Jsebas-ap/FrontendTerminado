@@ -3,17 +3,17 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 
 // Importar servicios de reportes
-import { InventarioLibrosReporteService } from '../../../services/inventario-libros-reporte.service';
-import { ActividadPrestamosReporteService } from '../../../services/actividad-prestamos-reporte.service';
-import { GestionAtrasosReporteService } from '../../../services/gestion-atrasos-reporte.service';
+import { InventarioLibrosReporteService } from '../../services/inventario-libros-reporte.service';
+import { ActividadPrestamosReporteService } from '../../services/actividad-prestamos-reporte.service';
+import { GestionAtrasosReporteService } from '../../services/gestion-atrasos-reporte.service';
 
 @Component({
   selector: 'app-historial',
   imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './historial.html',
-  styleUrl: './historial.scss'
+  templateUrl: './historial.component.html',
+  styleUrl: './historial.component.scss'
 })
-export class Historial implements OnInit {
+export class HistorialComponent implements OnInit {
   filtroForm: FormGroup;
   
   // Estados de carga

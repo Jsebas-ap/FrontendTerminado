@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { ReservasService } from '../../../services/reservas.service';
-import { AuthService } from '../../../services/auth.service';
+import { ReservasService } from '../../services/reservas.service';
+import { AuthService } from '../../services/auth.service';
 import { CommonModule } from '@angular/common';
-import { Reserva } from '../../../models/reserva.model';
+import { Reserva } from '../../models/reserva.model';
 import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-reservas',
   imports: [CommonModule, FormsModule],
-  templateUrl: './reservas.html',
-  styleUrl: './reservas.scss'
+  templateUrl: './reservas.component.html',
+  styleUrl: './reservas.component.scss'
 })
-export class Reservas implements OnInit {
+export class ReservasComponent implements OnInit {
   reservas: Reserva[] = [];
   codigo: string = '';
   constructor(private reservasService: ReservasService, public authService: AuthService) { }
