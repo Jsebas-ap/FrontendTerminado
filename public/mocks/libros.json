@@ -10,20 +10,7 @@
     "imagenUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/b9/96/b996c24480ce5faaa24c84fbf9a83d58.jpg",
     "isbn": "9788408193302",
     "slug": "12-reglas-para-vivir-un-antdoto-al-caos",
-    "ejemplares": [
-      {
-        "id": 4,
-        "codigoEjemplar": "12RPV-93302-001",
-        "estado": "RESERVADO",
-        "ubicacionId": 3,
-        "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
-        "libroId": 1,
-        "reservas": [
-          { "id": 1, "estado": "DEVUELTO" },
-          { "id": 3, "estado": "PENDIENTE" }
-        ]
-      }
-    ]
+    "ejemplares": []
   },
   {
     "id": 2,
@@ -36,26 +23,7 @@
     "imagenUrl": "https://cms.anagrama-ed.es/uploads/media/portadas/0001/32/thumb_31984_portadas_big.jpeg",
     "isbn": "9788433928184",
     "slug": "a-sangre-fra",
-    "ejemplares": [
-      {
-        "id": 2,
-        "codigoEjemplar": "ASF-ANA-001",
-        "estado": "EN_REPARACION",
-        "ubicacionId": 9,
-        "ubicacion": { "id": 9, "estante": "2", "posicion": "D" },
-        "libroId": 2,
-        "reservas": []
-      },
-      {
-        "id": 7,
-        "codigoEjemplar": "ASF-28184-002",
-        "estado": "DISPONIBLE",
-        "ubicacionId": 3,
-        "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
-        "libroId": 2,
-        "reservas": []
-      }
-    ]
+    "ejemplares": []
   },
   {
     "id": 3,
@@ -68,19 +36,7 @@
     "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9786280004891_akfcj6dpqsjbhiz1.jpg?width=700&height=1050&store=default&image-type=image",
     "isbn": "9786280004891",
     "slug": "si-esto-es-un-hombre",
-    "ejemplares": [
-      {
-        "id": 6,
-        "codigoEjemplar": "SEEUH-04891-001",
-        "estado": "RESERVADO",
-        "ubicacionId": 7,
-        "ubicacion": { "id": 7, "estante": "2", "posicion": "B" },
-        "libroId": 3,
-        "reservas": [
-          { "id": 9, "estado": "PENDIENTE" }
-        ]
-      }
-    ]
+    "ejemplares": []
   },
   {
     "id": 4,
@@ -93,40 +49,7 @@
     "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9786124346613_5elhdcekczqcykuy.jpg?width=700&height=1050&store=default&image-type=image",
     "isbn": "9786124346613",
     "slug": "el-pez-en-el-agua",
-    "ejemplares": [
-      {
-        "id": 1,
-        "codigoEjemplar": "EPA-DBS-001",
-        "estado": "RESERVADO",
-        "ubicacionId": 3,
-        "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
-        "libroId": 4,
-        "reservas": [
-          { "id": 2, "estado": "PENDIENTE" }
-        ]
-      },
-      {
-        "id": 3,
-        "codigoEjemplar": "EPA-DBS-002",
-        "estado": "RESERVADO",
-        "ubicacionId": 3,
-        "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
-        "libroId": 4,
-        "reservas": [
-          { "id": 4, "estado": "DEVUELTO" },
-          { "id": 5, "estado": "PENDIENTE" }
-        ]
-      },
-      {
-        "id": 5,
-        "codigoEjemplar": "PEEA-46613-003",
-        "estado": "DISPONIBLE",
-        "ubicacionId": 3,
-        "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
-        "libroId": 4,
-        "reservas": []
-      }
-    ]
+    "ejemplares": []
   },
   {
     "id": 5,
@@ -139,20 +62,123 @@
     "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9788408160113_vy9wyjjfnmfgybws.jpg?width=700&height=1050&store=default&image-type=image",
     "isbn": "9788408160113",
     "slug": "el-libro-de-la-selva",
-    "ejemplares": [
-      {
-        "id": 8,
-        "codigoEjemplar": "LDLS-60113-001",
-        "estado": "RESERVADO",
-        "ubicacionId": 13,
-        "ubicacion": { "id": 13, "estante": "3", "posicion": "C" },
-        "libroId": 5,
-        "reservas": [
-          { "id": 6, "estado": "PENDIENTE" },
-          { "id": 7, "estado": "PENDIENTE" },
-          { "id": 8, "estado": "PENDIENTE" }
-        ]
-      }
-    ]
+    "ejemplares": []
+  },
+  {
+    "id": 6,
+    "titulo": "Cien Años de Soledad",
+    "autor": "Gabriel García Márquez",
+    "descripcion": "La historia de la familia Buendía a lo largo de siete generaciones en el mítico pueblo de Macondo. La obra cumbre del realismo mágico narra el amor, la guerra y la soledad con una prosa deslumbrante que cambió para siempre la literatura latinoamericana.",
+    "editorial": "Debolsillo",
+    "fechaPublicacion": "1967-05-30",
+    "genero": "Novela",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9788497592208_cien-anos-de-soledad.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9788497592208",
+    "slug": "cien-anos-de-soledad",
+    "ejemplares": []
+  },
+  {
+    "id": 7,
+    "titulo": "Rayuela",
+    "autor": "Julio Cortázar",
+    "descripcion": "La novela que revolucionó la forma de narrar. Horacio Oliveira recorre París y Buenos Aires en un juego de saltos donde el lector elige su propio camino. Humor, jazz y una desgarradora historia de amor en una de las cumbres del boom latinoamericano.",
+    "editorial": "Alfaguara",
+    "fechaPublicacion": "1963-06-28",
+    "genero": "Novela",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9788420412699_rayuela.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9788420412699",
+    "slug": "rayuela",
+    "ejemplares": []
+  },
+  {
+    "id": 8,
+    "titulo": "La Ciudad y los Perros",
+    "autor": "Mario Vargas Llosa",
+    "descripcion": "En el Colegio Militar Leoncio Prado, un grupo de cadetes teje rabias, alianzas y traiciones al amparo de una disciplina férrea. Una feroz radiografía de la violencia y las jerarquías que consagró a su autor como narrador esencial del boom latinoamericano.",
+    "editorial": "Seix Barral",
+    "fechaPublicacion": "1963-10-01",
+    "genero": "Novela",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9788432248138_la-ciudad-y-los-perros.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9788432248138",
+    "slug": "la-ciudad-y-los-perros",
+    "ejemplares": []
+  },
+  {
+    "id": 9,
+    "titulo": "Pedro Páramo",
+    "autor": "Juan Rulfo",
+    "descripcion": "Juan Preciado llega a Comala buscando a su padre, Pedro Páramo, y encuentra un pueblo habitado por murmullos y fantasmas. Una novela breve y perfecta, fundamento del realismo mágico, donde los vivos y los muertos comparten la misma voz.",
+    "editorial": "Fondo de Cultura Económica",
+    "fechaPublicacion": "1955-04-01",
+    "genero": "Novela",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9789681650274_pedro-paramo.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9789681650274",
+    "slug": "pedro-paramo",
+    "ejemplares": []
+  },
+  {
+    "id": 10,
+    "titulo": "El Principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "descripcion": "Un aviador varado en el desierto conoce a un pequeño príncipe que viaja de planeta en planeta buscando un amigo. Una fábula luminosa sobre la amistad, la pérdida y lo esencial, que solo se ve bien con el corazón.",
+    "editorial": "Salamandra",
+    "fechaPublicacion": "1943-04-06",
+    "genero": "Infantil",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9788498382593_el-principito.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9788498382593",
+    "slug": "el-principito",
+    "ejemplares": []
+  },
+  {
+    "id": 11,
+    "titulo": "La Metamorfosis",
+    "autor": "Franz Kafka",
+    "descripcion": "Gregorio Samsa despierta una mañana convertido en un insecto y observa, impotente, cómo su familia lo rechaza. El relato más célebre de Kafka: una pesadilla lúcida sobre la alienación, el trabajo y la condición humana.",
+    "editorial": "Alianza",
+    "fechaPublicacion": "1915-10-15",
+    "genero": "Novela",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9788420637434_la-metamorfosis.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9788420637434",
+    "slug": "la-metamorfosis",
+    "ejemplares": []
+  },
+  {
+    "id": 12,
+    "titulo": "El Nombre del Viento",
+    "autor": "Patrick Rothfuss",
+    "descripcion": "Kvothe, músico, ladrón y mago legendario, narra su propia historia: su infancia entre artistas itinerantes, su llegada a la Universidad y su obsesiva búsqueda del nombre del viento. Primera entrega de la célebre trilogía Crónica del Asesino de Reyes.",
+    "editorial": "Plaza & Janés",
+    "fechaPublicacion": "2008-03-25",
+    "genero": "Fantasía",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9788401337208_el-nombre-del-viento.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9788401337208",
+    "slug": "el-nombre-del-viento",
+    "ejemplares": []
+  },
+  {
+    "id": 13,
+    "titulo": "Fundación",
+    "autor": "Isaac Asimov",
+    "descripcion": "Hari Seldon, matemático creador de la psicohistoria, prevé el colapso del Imperio Galáctico y funda una organización destinada a abreviar los mil años de barbarie que seguirán. La primera piedra de la ciencia ficción moderna.",
+    "editorial": "Umbriel",
+    "fechaPublicacion": "2004-05-01",
+    "genero": "Ciencia Ficción",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9788492853451_fundacion.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9788492853451",
+    "slug": "fundacion",
+    "ejemplares": []
+  },
+  {
+    "id": 14,
+    "titulo": "Drácula",
+    "autor": "Bram Stoker",
+    "descripcion": "A través de diarios, cartas y recortes de prensa se narra la llegada a Londres del conde Drácula y la desesperada lucha del profesor Van Helsing y sus aliados contra el vampiro inmortal. La novela gótica por excelencia, fundadora del mito moderno.",
+    "editorial": "Punto de Lectura",
+    "fechaPublicacion": "1897-05-26",
+    "genero": "Terror",
+    "imagenUrl": "https://www.crisol.com.pe/media/catalog/product/9/7/9788466327160_dracula.jpg?width=700&height=1050&store=default&image-type=image",
+    "isbn": "9788466327160",
+    "slug": "dracula",
+    "ejemplares": []
   }
 ]

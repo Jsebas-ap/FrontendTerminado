@@ -2,307 +2,256 @@
   {
     "id": 1,
     "estado": "DEVUELTO",
-    "fechaReserva": "2026-05-26",
-    "fechaEstimadaDevolucion": "2026-06-02",
-    "fechaRealDevolucion": "2026-06-18",
-    "user": {
-      "id": 2,
-      "nombres": "Carlos",
-      "apellidos": "Lector Pérez",
-      "username": "usuario@gmail.com",
-      "dni": "76543210",
-      "telefono": "987654321",
-      "direccion": "Av. Los Sauces 123, Ate",
-      "genero": "masculino",
-      "fechaNacimiento": "2000-05-15",
-      "enabled": true
-    },
+    "fechaReserva": "2026-09-15",
+    "fechaEstimadaDevolucion": "2026-09-29",
+    "fechaRealDevolucion": "2026-09-28",
+    "user": { "id": 2, "nombres": "Carlos", "apellidos": "Lector Pérez", "username": "usuario@gmail.com", "dni": "76543210", "telefono": "987654321", "direccion": "Av. Los Sauces 123, Ate", "genero": "masculino", "fechaNacimiento": "2000-05-15", "enabled": true },
     "ejemplar": {
       "id": 4,
       "codigoEjemplar": "12RPV-93302-001",
-      "estado": "RESERVADO",
-      "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
-      "libro": {
-        "id": 1,
-        "titulo": "12 Reglas para Vivir: Un Antídoto al Caos",
-        "autor": "Jordan B. Peterson",
-        "editorial": "Planeta",
-        "genero": "Autoayuda",
-        "isbn": "9788408193302",
-        "slug": "12-reglas-para-vivir-un-antdoto-al-caos"
-      }
+      "estado": "DISPONIBLE",
+      "ubicacion": { "id": 1, "estante": "1", "posicion": "A" },
+      "libro": { "id": 1, "titulo": "12 Reglas para Vivir: Un Antídoto al Caos", "autor": "Jordan B. Peterson", "editorial": "Planeta", "genero": "Autoayuda", "isbn": "9788408193302", "slug": "12-reglas-para-vivir-un-antdoto-al-caos" }
     }
   },
   {
     "id": 2,
-    "estado": "PENDIENTE",
-    "fechaReserva": "2026-06-23",
-    "fechaEstimadaDevolucion": "2026-06-30",
-    "fechaRealDevolucion": null,
-    "user": {
-      "id": 2,
-      "nombres": "Carlos",
-      "apellidos": "Lector Pérez",
-      "username": "usuario@gmail.com",
-      "dni": "76543210",
-      "telefono": "987654321",
-      "direccion": "Av. Los Sauces 123, Ate",
-      "genero": "masculino",
-      "fechaNacimiento": "2000-05-15",
-      "enabled": true
-    },
+    "estado": "DEVUELTO",
+    "fechaReserva": "2026-09-02",
+    "fechaEstimadaDevolucion": "2026-09-16",
+    "fechaRealDevolucion": "2026-09-20",
+    "user": { "id": 6, "nombres": "Camila", "apellidos": "Montes", "username": "prueba3@gmail.com", "dni": "03655421", "telefono": "965322221", "direccion": "Av. Los Girasoles 123", "genero": "femenino", "fechaNacimiento": "1986-07-30", "enabled": true },
     "ejemplar": {
-      "id": 1,
-      "codigoEjemplar": "EPA-DBS-001",
-      "estado": "RESERVADO",
+      "id": 3,
+      "codigoEjemplar": "EPA-DBS-002",
+      "estado": "DISPONIBLE",
       "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
-      "libro": {
-        "id": 4,
-        "titulo": "El Pez en el Agua",
-        "autor": "Mario Vargas Llosa",
-        "editorial": "DeBolsillo",
-        "genero": "Biografía",
-        "isbn": "9786124346613",
-        "slug": "el-pez-en-el-agua"
-      }
+      "libro": { "id": 4, "titulo": "El Pez en el Agua", "autor": "Mario Vargas Llosa", "editorial": "DeBolsillo", "genero": "Biografía", "isbn": "9786124346613", "slug": "el-pez-en-el-agua" }
     }
   },
   {
     "id": 3,
-    "estado": "PENDIENTE",
-    "fechaReserva": "2026-06-23",
-    "fechaEstimadaDevolucion": "2026-06-30",
-    "fechaRealDevolucion": null,
-    "user": {
-      "id": 1,
-      "nombres": "Andre",
-      "apellidos": "Lagos",
-      "username": "andre@gmail.com",
-      "dni": "72155654",
-      "telefono": "965322221",
-      "direccion": "Av. Los Girasoles 123",
-      "genero": "masculino",
-      "fechaNacimiento": "2003-01-04",
-      "enabled": true
-    },
+    "estado": "DEVUELTO",
+    "fechaReserva": "2026-09-22",
+    "fechaEstimadaDevolucion": "2026-10-06",
+    "fechaRealDevolucion": "2026-10-05",
+    "user": { "id": 13, "nombres": "Lucia", "apellidos": "Gomez", "username": "prueba7@gmail.com", "dni": "45201658", "telefono": "965420210", "direccion": "Av. Los Girasoles 123", "genero": "femenino", "fechaNacimiento": "2007-10-14", "enabled": true },
     "ejemplar": {
-      "id": 4,
-      "codigoEjemplar": "12RPV-93302-001",
-      "estado": "RESERVADO",
-      "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
-      "libro": {
-        "id": 1,
-        "titulo": "12 Reglas para Vivir: Un Antídoto al Caos",
-        "autor": "Jordan B. Peterson",
-        "editorial": "Planeta",
-        "genero": "Autoayuda",
-        "isbn": "9788408193302",
-        "slug": "12-reglas-para-vivir-un-antdoto-al-caos"
-      }
+      "id": 7,
+      "codigoEjemplar": "ASF-28184-002",
+      "estado": "DISPONIBLE",
+      "ubicacion": { "id": 11, "estante": "3", "posicion": "A" },
+      "libro": { "id": 2, "titulo": "A Sangre Fría", "autor": "Truman Capote", "editorial": "Anagrama", "genero": "Histórico", "isbn": "9788433928184", "slug": "a-sangre-fra" }
     }
   },
   {
     "id": 4,
     "estado": "DEVUELTO",
-    "fechaReserva": "2026-06-22",
-    "fechaEstimadaDevolucion": "2026-06-29",
-    "fechaRealDevolucion": "2026-06-18",
-    "user": {
-      "id": 6,
-      "nombres": "Camila",
-      "apellidos": "Montes",
-      "username": "prueba3@gmail.com",
-      "dni": "03655421",
-      "telefono": "965322221",
-      "direccion": "Av. Los Girasoles 123",
-      "genero": "femenino",
-      "fechaNacimiento": "1986-07-30",
-      "enabled": true
-    },
+    "fechaReserva": "2026-10-01",
+    "fechaEstimadaDevolucion": "2026-10-15",
+    "fechaRealDevolucion": "2026-10-14",
+    "user": { "id": 1, "nombres": "Andre", "apellidos": "Lagos", "username": "andre@gmail.com", "dni": "72155654", "telefono": "965322221", "direccion": "Av. Los Girasoles 123", "genero": "masculino", "fechaNacimiento": "2003-01-04", "enabled": true },
     "ejemplar": {
-      "id": 3,
-      "codigoEjemplar": "EPA-DBS-002",
-      "estado": "RESERVADO",
-      "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
-      "libro": {
-        "id": 4,
-        "titulo": "El Pez en el Agua",
-        "autor": "Mario Vargas Llosa",
-        "editorial": "DeBolsillo",
-        "genero": "Biografía",
-        "isbn": "9786124346613",
-        "slug": "el-pez-en-el-agua"
-      }
+      "id": 5,
+      "codigoEjemplar": "PEEA-46613-003",
+      "estado": "DISPONIBLE",
+      "ubicacion": { "id": 5, "estante": "1", "posicion": "E" },
+      "libro": { "id": 4, "titulo": "El Pez en el Agua", "autor": "Mario Vargas Llosa", "editorial": "DeBolsillo", "genero": "Biografía", "isbn": "9786124346613", "slug": "el-pez-en-el-agua" }
     }
   },
   {
     "id": 5,
-    "estado": "PENDIENTE",
-    "fechaReserva": "2026-06-23",
-    "fechaEstimadaDevolucion": "2026-06-30",
-    "fechaRealDevolucion": null,
-    "user": {
-      "id": 1,
-      "nombres": "Andre",
-      "apellidos": "Lagos",
-      "username": "andre@gmail.com",
-      "dni": "72155654",
-      "telefono": "965322221",
-      "direccion": "Av. Los Girasoles 123",
-      "genero": "masculino",
-      "fechaNacimiento": "2003-01-04",
-      "enabled": true
-    },
+    "estado": "DEVUELTO",
+    "fechaReserva": "2026-10-05",
+    "fechaEstimadaDevolucion": "2026-10-19",
+    "fechaRealDevolucion": "2026-10-19",
+    "user": { "id": 12, "nombres": "Rodrigo", "apellidos": "Rodruiguez", "username": "rodrigo@gmail.com", "dni": "75201156", "telefono": "965200125", "direccion": "Carretera Central 456, Ate", "genero": "otro", "fechaNacimiento": "2007-09-03", "enabled": true },
     "ejemplar": {
-      "id": 3,
-      "codigoEjemplar": "EPA-DBS-002",
-      "estado": "RESERVADO",
-      "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
-      "libro": {
-        "id": 4,
-        "titulo": "El Pez en el Agua",
-        "autor": "Mario Vargas Llosa",
-        "editorial": "DeBolsillo",
-        "genero": "Biografía",
-        "isbn": "9786124346613",
-        "slug": "el-pez-en-el-agua"
-      }
+      "id": 10,
+      "codigoEjemplar": "CAAS-92208-002",
+      "estado": "DISPONIBLE",
+      "ubicacion": { "id": 4, "estante": "1", "posicion": "D" },
+      "libro": { "id": 6, "titulo": "Cien Años de Soledad", "autor": "Gabriel García Márquez", "editorial": "Debolsillo", "genero": "Novela", "isbn": "9788497592208", "slug": "cien-anos-de-soledad" }
     }
   },
   {
     "id": 6,
-    "estado": "PENDIENTE",
-    "fechaReserva": "2026-06-30",
-    "fechaEstimadaDevolucion": "2026-07-14",
-    "fechaRealDevolucion": null,
-    "user": {
-      "id": 6,
-      "nombres": "Camila",
-      "apellidos": "Montes",
-      "username": "prueba3@gmail.com",
-      "dni": "03655421",
-      "telefono": "965322221",
-      "direccion": "Av. Los Girasoles 123",
-      "genero": "femenino",
-      "fechaNacimiento": "1986-07-30",
-      "enabled": true
-    },
+    "estado": "DEVUELTO",
+    "fechaReserva": "2026-10-08",
+    "fechaEstimadaDevolucion": "2026-10-22",
+    "fechaRealDevolucion": "2026-10-21",
+    "user": { "id": 2, "nombres": "Carlos", "apellidos": "Lector Pérez", "username": "usuario@gmail.com", "dni": "76543210", "telefono": "987654321", "direccion": "Av. Los Sauces 123, Ate", "genero": "masculino", "fechaNacimiento": "2000-05-15", "enabled": true },
     "ejemplar": {
-      "id": 8,
-      "codigoEjemplar": "LDLS-60113-001",
-      "estado": "RESERVADO",
-      "ubicacion": { "id": 13, "estante": "3", "posicion": "C" },
-      "libro": {
-        "id": 5,
-        "titulo": "El Libro de la Selva",
-        "autor": "Rudyard Kipling",
-        "editorial": "Austral",
-        "genero": "Aventura",
-        "isbn": "9788408160113",
-        "slug": "el-libro-de-la-selva"
-      }
+      "id": 13,
+      "codigoEjemplar": "EPRN-2593-001",
+      "estado": "DISPONIBLE",
+      "ubicacion": { "id": 12, "estante": "3", "posicion": "B" },
+      "libro": { "id": 10, "titulo": "El Principito", "autor": "Antoine de Saint-Exupéry", "editorial": "Salamandra", "genero": "Infantil", "isbn": "9788498382593", "slug": "el-principito" }
     }
   },
   {
     "id": 7,
     "estado": "PENDIENTE",
-    "fechaReserva": "2026-07-21",
-    "fechaEstimadaDevolucion": "2026-08-04",
+    "fechaReserva": "2026-10-20",
+    "fechaEstimadaDevolucion": "2026-11-10",
     "fechaRealDevolucion": null,
-    "user": {
-      "id": 1,
-      "nombres": "Andre",
-      "apellidos": "Lagos",
-      "username": "andre@gmail.com",
-      "dni": "72155654",
-      "telefono": "965322221",
-      "direccion": "Av. Los Girasoles 123",
-      "genero": "masculino",
-      "fechaNacimiento": "2003-01-04",
-      "enabled": true
-    },
+    "user": { "id": 1, "nombres": "Andre", "apellidos": "Lagos", "username": "andre@gmail.com", "dni": "72155654", "telefono": "965322221", "direccion": "Av. Los Girasoles 123", "genero": "masculino", "fechaNacimiento": "2003-01-04", "enabled": true },
     "ejemplar": {
       "id": 8,
       "codigoEjemplar": "LDLS-60113-001",
       "estado": "RESERVADO",
       "ubicacion": { "id": 13, "estante": "3", "posicion": "C" },
-      "libro": {
-        "id": 5,
-        "titulo": "El Libro de la Selva",
-        "autor": "Rudyard Kipling",
-        "editorial": "Austral",
-        "genero": "Aventura",
-        "isbn": "9788408160113",
-        "slug": "el-libro-de-la-selva"
-      }
+      "libro": { "id": 5, "titulo": "El Libro de la Selva", "autor": "Rudyard Kipling", "editorial": "Austral", "genero": "Aventura", "isbn": "9788408160113", "slug": "el-libro-de-la-selva" }
     }
   },
   {
     "id": 8,
     "estado": "PENDIENTE",
-    "fechaReserva": "2026-07-28",
-    "fechaEstimadaDevolucion": "2026-08-11",
+    "fechaReserva": "2026-10-24",
+    "fechaEstimadaDevolucion": "2026-11-07",
     "fechaRealDevolucion": null,
-    "user": {
-      "id": 1,
-      "nombres": "Andre",
-      "apellidos": "Lagos",
-      "username": "andre@gmail.com",
-      "dni": "72155654",
-      "telefono": "965322221",
-      "direccion": "Av. Los Girasoles 123",
-      "genero": "masculino",
-      "fechaNacimiento": "2003-01-04",
-      "enabled": true
-    },
+    "user": { "id": 6, "nombres": "Camila", "apellidos": "Montes", "username": "prueba3@gmail.com", "dni": "03655421", "telefono": "965322221", "direccion": "Av. Los Girasoles 123", "genero": "femenino", "fechaNacimiento": "1986-07-30", "enabled": true },
     "ejemplar": {
-      "id": 8,
-      "codigoEjemplar": "LDLS-60113-001",
+      "id": 9,
+      "codigoEjemplar": "CAAS-92208-001",
       "estado": "RESERVADO",
-      "ubicacion": { "id": 13, "estante": "3", "posicion": "C" },
-      "libro": {
-        "id": 5,
-        "titulo": "El Libro de la Selva",
-        "autor": "Rudyard Kipling",
-        "editorial": "Austral",
-        "genero": "Aventura",
-        "isbn": "9788408160113",
-        "slug": "el-libro-de-la-selva"
-      }
+      "ubicacion": { "id": 2, "estante": "1", "posicion": "B" },
+      "libro": { "id": 6, "titulo": "Cien Años de Soledad", "autor": "Gabriel García Márquez", "editorial": "Debolsillo", "genero": "Novela", "isbn": "9788497592208", "slug": "cien-anos-de-soledad" }
     }
   },
   {
     "id": 9,
     "estado": "PENDIENTE",
-    "fechaReserva": "2026-07-29",
-    "fechaEstimadaDevolucion": "2026-08-12",
+    "fechaReserva": "2026-10-27",
+    "fechaEstimadaDevolucion": "2026-11-10",
     "fechaRealDevolucion": null,
-    "user": {
-      "id": 13,
-      "nombres": "Lucia",
-      "apellidos": "Gomez",
-      "username": "prueba7@gmail.com",
-      "dni": "45201658",
-      "telefono": "965420210",
-      "direccion": "Av. Los Girasoles 123",
-      "genero": "femenino",
-      "fechaNacimiento": "2007-10-14",
-      "enabled": true
-    },
+    "user": { "id": 13, "nombres": "Lucia", "apellidos": "Gomez", "username": "prueba7@gmail.com", "dni": "45201658", "telefono": "965420210", "direccion": "Av. Los Girasoles 123", "genero": "femenino", "fechaNacimiento": "2007-10-14", "enabled": true },
     "ejemplar": {
       "id": 6,
       "codigoEjemplar": "SEEUH-04891-001",
       "estado": "RESERVADO",
       "ubicacion": { "id": 7, "estante": "2", "posicion": "B" },
-      "libro": {
-        "id": 3,
-        "titulo": "Si Esto es un Hombre",
-        "autor": "Primo Levi",
-        "editorial": "Planeta",
-        "genero": "Histórico",
-        "isbn": "9786280004891",
-        "slug": "si-esto-es-un-hombre"
-      }
+      "libro": { "id": 3, "titulo": "Si Esto es un Hombre", "autor": "Primo Levi", "editorial": "Planeta", "genero": "Histórico", "isbn": "9786280004891", "slug": "si-esto-es-un-hombre" }
+    }
+  },
+  {
+    "id": 10,
+    "estado": "PENDIENTE",
+    "fechaReserva": "2026-10-29",
+    "fechaEstimadaDevolucion": "2026-11-12",
+    "fechaRealDevolucion": null,
+    "user": { "id": 12, "nombres": "Rodrigo", "apellidos": "Rodruiguez", "username": "rodrigo@gmail.com", "dni": "75201156", "telefono": "965200125", "direccion": "Carretera Central 456, Ate", "genero": "otro", "fechaNacimiento": "2007-09-03", "enabled": true },
+    "ejemplar": {
+      "id": 15,
+      "codigoEjemplar": "ENV-7208-001",
+      "estado": "RESERVADO",
+      "ubicacion": { "id": 15, "estante": "3", "posicion": "E" },
+      "libro": { "id": 12, "titulo": "El Nombre del Viento", "autor": "Patrick Rothfuss", "editorial": "Plaza & Janés", "genero": "Fantasía", "isbn": "9788401337208", "slug": "el-nombre-del-viento" }
+    }
+  },
+  {
+    "id": 11,
+    "estado": "PENDIENTE",
+    "fechaReserva": "2026-10-30",
+    "fechaEstimadaDevolucion": "2026-11-13",
+    "fechaRealDevolucion": null,
+    "user": { "id": 16, "nombres": "Sofía", "apellidos": "Torres Vega", "username": "sofia@gmail.com", "dni": "45871236", "telefono": "954782136", "direccion": "Jr. Los Nardos 789, Ate", "genero": "femenino", "fechaNacimiento": "2001-11-22", "enabled": true },
+    "ejemplar": {
+      "id": 17,
+      "codigoEjemplar": "FND-3451-001",
+      "estado": "RESERVADO",
+      "ubicacion": { "id": 17, "estante": "4", "posicion": "B" },
+      "libro": { "id": 13, "titulo": "Fundación", "autor": "Isaac Asimov", "editorial": "Umbriel", "genero": "Ciencia Ficción", "isbn": "9788492853451", "slug": "fundacion" }
+    }
+  },
+  {
+    "id": 12,
+    "estado": "PENDIENTE",
+    "fechaReserva": "2026-09-25",
+    "fechaEstimadaDevolucion": "2026-10-09",
+    "fechaRealDevolucion": null,
+    "user": { "id": 2, "nombres": "Carlos", "apellidos": "Lector Pérez", "username": "usuario@gmail.com", "dni": "76543210", "telefono": "987654321", "direccion": "Av. Los Sauces 123, Ate", "genero": "masculino", "fechaNacimiento": "2000-05-15", "enabled": true },
+    "ejemplar": {
+      "id": 1,
+      "codigoEjemplar": "EPA-DBS-001",
+      "estado": "RESERVADO",
+      "ubicacion": { "id": 3, "estante": "1", "posicion": "C" },
+      "libro": { "id": 4, "titulo": "El Pez en el Agua", "autor": "Mario Vargas Llosa", "editorial": "DeBolsillo", "genero": "Biografía", "isbn": "9786124346613", "slug": "el-pez-en-el-agua" }
+    }
+  },
+  {
+    "id": 13,
+    "estado": "PENDIENTE",
+    "fechaReserva": "2026-09-28",
+    "fechaEstimadaDevolucion": "2026-10-12",
+    "fechaRealDevolucion": null,
+    "user": { "id": 6, "nombres": "Camila", "apellidos": "Montes", "username": "prueba3@gmail.com", "dni": "03655421", "telefono": "965322221", "direccion": "Av. Los Girasoles 123", "genero": "femenino", "fechaNacimiento": "1986-07-30", "enabled": true },
+    "ejemplar": {
+      "id": 14,
+      "codigoEjemplar": "DRAC-7160-001",
+      "estado": "RESERVADO",
+      "ubicacion": { "id": 14, "estante": "3", "posicion": "D" },
+      "libro": { "id": 14, "titulo": "Drácula", "autor": "Bram Stoker", "editorial": "Punto de Lectura", "genero": "Terror", "isbn": "9788466327160", "slug": "dracula" }
+    }
+  },
+  {
+    "id": 14,
+    "estado": "PENDIENTE",
+    "fechaReserva": "2026-10-02",
+    "fechaEstimadaDevolucion": "2026-10-16",
+    "fechaRealDevolucion": null,
+    "user": { "id": 1, "nombres": "Andre", "apellidos": "Lagos", "username": "andre@gmail.com", "dni": "72155654", "telefono": "965322221", "direccion": "Av. Los Girasoles 123", "genero": "masculino", "fechaNacimiento": "2003-01-04", "enabled": true },
+    "ejemplar": {
+      "id": 11,
+      "codigoEjemplar": "RYLA-12699-001",
+      "estado": "RESERVADO",
+      "ubicacion": { "id": 8, "estante": "2", "posicion": "C" },
+      "libro": { "id": 7, "titulo": "Rayuela", "autor": "Julio Cortázar", "editorial": "Alfaguara", "genero": "Novela", "isbn": "9788420412699", "slug": "rayuela" }
+    }
+  },
+  {
+    "id": 15,
+    "estado": "PENDIENTE",
+    "fechaReserva": "2026-10-06",
+    "fechaEstimadaDevolucion": "2026-10-20",
+    "fechaRealDevolucion": null,
+    "user": { "id": 17, "nombres": "Diego", "apellidos": "Flores Castro", "username": "diego@gmail.com", "dni": "71203458", "telefono": "931254678", "direccion": "Av. Nicolás Ayllón 321, Ate", "genero": "masculino", "fechaNacimiento": "1999-04-08", "enabled": true },
+    "ejemplar": {
+      "id": 18,
+      "codigoEjemplar": "LCDLP-8138-001",
+      "estado": "RESERVADO",
+      "ubicacion": { "id": 18, "estante": "4", "posicion": "C" },
+      "libro": { "id": 8, "titulo": "La Ciudad y los Perros", "autor": "Mario Vargas Llosa", "editorial": "Seix Barral", "genero": "Novela", "isbn": "9788432248138", "slug": "la-ciudad-y-los-perros" }
+    }
+  },
+  {
+    "id": 16,
+    "estado": "PENDIENTE",
+    "fechaReserva": "2026-10-18",
+    "fechaEstimadaDevolucion": "2026-11-04",
+    "fechaRealDevolucion": null,
+    "user": { "id": 13, "nombres": "Lucia", "apellidos": "Gomez", "username": "prueba7@gmail.com", "dni": "45201658", "telefono": "965420210", "direccion": "Av. Los Girasoles 123", "genero": "femenino", "fechaNacimiento": "2007-10-14", "enabled": true },
+    "ejemplar": {
+      "id": 16,
+      "codigoEjemplar": "MTFS-7434-001",
+      "estado": "PRESTADO",
+      "ubicacion": { "id": 16, "estante": "4", "posicion": "A" },
+      "libro": { "id": 11, "titulo": "La Metamorfosis", "autor": "Franz Kafka", "editorial": "Alianza", "genero": "Novela", "isbn": "9788420637434", "slug": "la-metamorfosis" }
+    }
+  },
+  {
+    "id": 17,
+    "estado": "PENDIENTE",
+    "fechaReserva": "2026-10-21",
+    "fechaEstimadaDevolucion": "2026-11-06",
+    "fechaRealDevolucion": null,
+    "user": { "id": 16, "nombres": "Sofía", "apellidos": "Torres Vega", "username": "sofia@gmail.com", "dni": "45871236", "telefono": "954782136", "direccion": "Jr. Los Nardos 789, Ate", "genero": "femenino", "fechaNacimiento": "2001-11-22", "enabled": true },
+    "ejemplar": {
+      "id": 12,
+      "codigoEjemplar": "PDP-0274-001",
+      "estado": "PRESTADO",
+      "ubicacion": { "id": 10, "estante": "2", "posicion": "E" },
+      "libro": { "id": 9, "titulo": "Pedro Páramo", "autor": "Juan Rulfo", "editorial": "Fondo de Cultura Económica", "genero": "Novela", "isbn": "9789681650274", "slug": "pedro-paramo" }
     }
   }
 ]
