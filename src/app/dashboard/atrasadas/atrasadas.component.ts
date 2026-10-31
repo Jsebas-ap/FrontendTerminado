@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ReservasService } from '../../services/reservas.service';
+import { ReservasService } from '@app/services/reservas.service';
 import { CommonModule } from '@angular/common';
-import { Reserva } from '../../models/reserva.model';
+import { Reserva } from '@app/models/reserva.model';
 
 @Component({
   selector: 'app-atrasadas',

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import * as ExcelJS from 'exceljs';
 import { ReservasService } from './reservas.service';
-import { Reserva } from '../models/reserva.model';
+import { Reserva } from '@app/models/reserva.model';
 
 @Injectable({
   providedIn: 'root'

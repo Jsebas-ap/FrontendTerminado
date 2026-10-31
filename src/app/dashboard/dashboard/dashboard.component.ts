@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuariosService } from '../../services/usuarios.service';
-import { EjemplaresService } from '../../services/ejemplares.service';
-import { ReservasService } from '../../services/reservas.service';
-import { Usuario } from '../../models/usuario.model';
-import { Ejemplar } from '../../models/ejemplar.model';
-import { Reserva } from '../../models/reserva.model';
+import { UsuariosService } from '@app/services/usuarios.service';
+import { EjemplaresService } from '@app/services/ejemplares.service';
+import { ReservasService } from '@app/services/reservas.service';
+import { Usuario } from '@app/models/usuario.model';
+import { Ejemplar } from '@app/models/ejemplar.model';
+import { Reserva } from '@app/models/reserva.model';
 import { CommonModule } from '@angular/common';
 
 @Component({

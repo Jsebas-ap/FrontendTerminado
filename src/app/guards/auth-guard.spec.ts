@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AuthGuard } from './auth-guard';
 import { Router } from '@angular/router';
-import { AuthService } from '../services/auth.service';
+import { AuthService } from '@app/services/auth.service';
 
 describe('AuthGuard', () => {
   let guard: AuthGuard;

@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 
 import { StaffGuard } from './staff-guard';
-import { AuthService } from '../services/auth.service';
+import { AuthService } from '@app/services/auth.service';
 
 describe('StaffGuard', () => {
   let guard: StaffGuard;

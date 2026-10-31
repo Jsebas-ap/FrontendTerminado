@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import * as ExcelJS from 'exceljs';
 import { LibrosService } from './libros.service';
-import { Libro } from '../models/libro.model';
-import { Ejemplar, EstadoEjemplar } from '../models/ejemplar.model';
+import { Libro } from '@app/models/libro.model';
+import { Ejemplar, EstadoEjemplar } from '@app/models/ejemplar.model';
 
 /**
  * Tipo local que extiende Ejemplar para tipar el array `reservas` que el

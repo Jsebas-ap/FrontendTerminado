@@ -4,7 +4,7 @@ import { firstValueFrom } from 'rxjs';
 import * as pdfMake from 'pdfmake/build/pdfmake';
 import * as pdfFontsModule from 'pdfmake/build/vfs_fonts';
 import { ReservasService } from './reservas.service';
-import { Reserva } from '../models/reserva.model';
+import { Reserva } from '@app/models/reserva.model';
 
 // Configurar fuentes virtuales para que pdfmake funcione en el navegador
 const pdfFonts: any = pdfFontsModule;

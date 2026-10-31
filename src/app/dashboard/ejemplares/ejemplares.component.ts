@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { EjemplaresService } from '../../services/ejemplares.service';
-import { LibrosService } from '../../services/libros.service';
-import { AuthService } from '../../services/auth.service';
-import { Ejemplar, EstadoEjemplar, Ubicacion } from '../../models/ejemplar.model';
+import { EjemplaresService } from '@app/services/ejemplares.service';
+import { LibrosService } from '@app/services/libros.service';
+import { AuthService } from '@app/services/auth.service';
+import { Ejemplar, EstadoEjemplar, Ubicacion } from '@app/models/ejemplar.model';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';

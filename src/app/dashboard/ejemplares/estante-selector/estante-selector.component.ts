@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Ubicacion, Ejemplar } from '../../../models/ejemplar.model';
+import { Ubicacion, Ejemplar } from '@app/models/ejemplar.model';
 
 // ───────────────────────────────────────────────────────────────────────────
 // Tipos internos del componente
