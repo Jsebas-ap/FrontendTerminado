@@ -2,8 +2,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { LibrosService } from '../../../controllers/libros';
-import { AuthService } from '../../../controllers/auth.service';
+import { LibrosService } from '../../../services/libros.service';
+import { AuthService } from '../../../services/auth.service';
 import { Subscription } from 'rxjs';
 
 @Component({

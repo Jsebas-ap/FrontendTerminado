@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { BehaviorSubject, catchError, map, Observable, tap, throwError } from 'rxjs';
-import { UsuariosService } from './usuarios';
+import { UsuariosService } from './usuarios.service';
 import { MockAuthService } from './mock-auth.service';
 
 @Injectable({ providedIn: 'root' })

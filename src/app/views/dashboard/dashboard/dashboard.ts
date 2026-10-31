@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuariosService } from '../../../controllers/usuarios';
-import { EjemplaresService } from '../../../controllers/ejemplares';
-import { ReservasService } from '../../../controllers/reservas';
+import { UsuariosService } from '../../../services/usuarios.service';
+import { EjemplaresService } from '../../../services/ejemplares.service';
+import { ReservasService } from '../../../services/reservas.service';
 import { Usuario } from '../../../models/usuario.model';
 import { Ejemplar } from '../../../models/ejemplar.model';
 import { Reserva } from '../../../models/reserva.model';

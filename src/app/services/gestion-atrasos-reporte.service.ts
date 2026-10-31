@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
 import * as pdfMake from 'pdfmake/build/pdfmake';
 import * as pdfFontsModule from 'pdfmake/build/vfs_fonts';
-import { ReservasService } from './reservas';
+import { ReservasService } from './reservas.service';
 import { Reserva } from '../models/reserva.model';
 
 // Configurar fuentes virtuales para que pdfmake funcione en el navegador

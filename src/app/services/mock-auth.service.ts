@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of, throwError } from 'rxjs';
-import { USE_MOCK_DATA } from './shared/mock-config';
-import { MockDataStore } from './shared/mock-data.store';
+import { USE_MOCK_DATA } from './mock-config';
+import { MockDataStore } from './mock-data.store';
 
 @Injectable({ providedIn: 'root' })
 export class MockAuthService {

@@ -1,14 +1,14 @@
 import { Component, OnInit, LOCALE_ID } from '@angular/core';
 import { ActivatedRoute, RouterModule, NavigationExtras } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { LibrosService } from '../../../controllers/libros';
+import { LibrosService } from '../../../services/libros.service';
 import { FormsModule } from '@angular/forms';
-import { AuthService } from '../../../controllers/auth.service';
+import { AuthService } from '../../../services/auth.service';
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { Ejemplar } from '../../../models/ejemplar.model';
-import { ReservasService } from '../../../controllers/reservas';
+import { ReservasService } from '../../../services/reservas.service';
 import { Router } from '@angular/router';
 import { filter, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';

@@ -15,8 +15,8 @@ import { Usuarios } from './views/dashboard/usuarios/usuarios';
 import { Reservas } from './views/dashboard/reservas/reservas';
 import { Historial } from './views/dashboard/historial/historial';
 import { Atrasadas } from './views/dashboard/atrasadas/atrasadas';
-import { AdminGuard } from './controllers/shared/guards/admin-guard';
-import { StaffGuard } from './controllers/shared/guards/staff-guard';
+import { AdminGuard } from './guards/admin-guard';
+import { StaffGuard } from './guards/staff-guard';
 
 export const routes: Routes = [
     {

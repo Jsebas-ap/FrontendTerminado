@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 
 // Importar servicios de reportes
-import { InventarioLibrosReporteService } from '../../../controllers/inventario-libros-reporte.service';
-import { ActividadPrestamosReporteService } from '../../../controllers/actividad-prestamos-reporte.service';
-import { GestionAtrasosReporteService } from '../../../controllers/gestion-atrasos-reporte.service';
+import { InventarioLibrosReporteService } from '../../../services/inventario-libros-reporte.service';
+import { ActividadPrestamosReporteService } from '../../../services/actividad-prestamos-reporte.service';
+import { GestionAtrasosReporteService } from '../../../services/gestion-atrasos-reporte.service';
 
 @Component({
   selector: 'app-historial',

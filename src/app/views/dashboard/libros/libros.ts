@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LibrosService } from '../../../controllers/libros';
-import { AuthService } from '../../../controllers/auth.service';
+import { LibrosService } from '../../../services/libros.service';
+import { AuthService } from '../../../services/auth.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
 declare var bootstrap: any;

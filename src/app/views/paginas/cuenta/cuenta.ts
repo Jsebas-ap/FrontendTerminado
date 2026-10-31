@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router, RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { AuthService } from '../../../controllers/auth.service';
+import { AuthService } from '../../../services/auth.service';
 import { Subscription } from 'rxjs';
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';

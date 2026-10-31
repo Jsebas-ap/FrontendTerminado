@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import ubicacionesJson from '../../../../public/mocks/ubicaciones.json';
-import rolesJson from '../../../../public/mocks/roles.json';
-import librosJson from '../../../../public/mocks/libros.json';
-import ejemplaresJson from '../../../../public/mocks/ejemplares.json';
-import usuariosJson from '../../../../public/mocks/usuarios.json';
-import reservasJson from '../../../../public/mocks/reservas.json';
+import ubicacionesJson from '../../../public/mocks/ubicaciones.json';
+import rolesJson from '../../../public/mocks/roles.json';
+import librosJson from '../../../public/mocks/libros.json';
+import ejemplaresJson from '../../../public/mocks/ejemplares.json';
+import usuariosJson from '../../../public/mocks/usuarios.json';
+import reservasJson from '../../../public/mocks/reservas.json';
 
 @Injectable({
   providedIn: 'root'

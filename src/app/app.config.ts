@@ -2,8 +2,8 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChang
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { provideHttpClient, withInterceptors, withInterceptorsFromDi, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { routes } from './app.routes';
-import { TokenInterceptor } from './controllers/shared/interceptors/token-interceptor';
-import { mockBackendInterceptor } from './controllers/shared/interceptors/mock-backend.interceptor';
+import { TokenInterceptor } from './interceptors/token-interceptor';
+import { mockBackendInterceptor } from './interceptors/mock-backend.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [

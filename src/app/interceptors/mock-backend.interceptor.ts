@@ -2,8 +2,8 @@ import { inject } from '@angular/core';
 import { HttpInterceptorFn, HttpResponse } from '@angular/common/http';
 import { of, throwError } from 'rxjs';
 import { delay } from 'rxjs/operators';
-import { USE_MOCK_DATA } from '../mock-config';
-import { MockDataStore } from '../mock-data.store';
+import { USE_MOCK_DATA } from '../services/mock-config';
+import { MockDataStore } from '../services/mock-data.store';
 
 /**
  * Interceptor HTTP que captura las peticiones dirigidas a la API del backend
