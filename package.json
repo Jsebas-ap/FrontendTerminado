@@ -33,6 +33,7 @@
     "@angular/compiler-cli": "^20.0.0",
     "@types/bootstrap": "^5.2.10",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^26.6.6",
     "@types/pdfmake": "^0.3.3",
     "angular-cli-ghpages": "^3.1.0",
     "jasmine-core": "~5.7.0",
