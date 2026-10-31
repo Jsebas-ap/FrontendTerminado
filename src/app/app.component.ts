@@ -6,10 +6,10 @@ import { ToastService } from './services/toast.service';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, CommonModule],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss'
 })
-export class App {
+export class AppComponent {
   protected title = 'frontend-reserva-libros';
 
   constructor(public toastService: ToastService) {}

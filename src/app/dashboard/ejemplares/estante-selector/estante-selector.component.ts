@@ -39,7 +39,6 @@ const ESTANTES_ORDEN = [4, 3, 2, 1] as const; // izquierda → derecha
 
 @Component({
   selector: 'app-estante-selector',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './estante-selector.component.html',
   styleUrl: './estante-selector.component.scss'
