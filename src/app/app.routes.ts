@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
 import { Libros } from './views/dashboard/libros/libros';
 import { Dashboard } from './views/dashboard/dashboard/dashboard';
-import { Principal } from './views/paginas/principal/principal';
+import { PrincipalComponent } from './paginas/principal/principal.component';
 import { DashboardNavbar } from './views/dashboard/dashboard-navbar/dashboard-navbar';
-import { PrincipalNavbarComponent } from './views/paginas/principal-navbar/principal-navbar';
-import { Catalogo } from './views/paginas/catalogo/catalogo';
-import { Detalle } from './views/paginas/detalle/detalle';
-import { Prestamo } from './views/paginas/prestamo/prestamo';
-import { Registrar } from './views/paginas/registrar/registrar';
-import { CuentaComponent } from './views/paginas/cuenta/cuenta';
-import { MisReservas } from './views/paginas/mis-reservas/mis-reservas';
+import { PrincipalNavbarComponent } from './paginas/principal-navbar/principal-navbar.component';
+import { CatalogoComponent } from './paginas/catalogo/catalogo.component';
+import { DetalleComponent } from './paginas/detalle/detalle.component';
+import { PrestamoComponent } from './paginas/prestamo/prestamo.component';
+import { RegistrarComponent } from './paginas/registrar/registrar.component';
+import { CuentaComponent } from './paginas/cuenta/cuenta.component';
+import { MisReservasComponent } from './paginas/mis-reservas/mis-reservas.component';
 import { Ejemplares } from './views/dashboard/ejemplares/ejemplares';
 import { Usuarios } from './views/dashboard/usuarios/usuarios';
 import { Reservas } from './views/dashboard/reservas/reservas';
@@ -25,23 +25,23 @@ export const routes: Routes = [
         children: [
             {
                 path: '',
-                component: Principal
+                component: PrincipalComponent
             },
             {
                 path: 'catalogo',
-                component: Catalogo
+                component: CatalogoComponent
             },
             {
                 path: 'detalle/:slug',
-                loadComponent: () => import('./views/paginas/detalle/detalle').then(m => m.Detalle)
+                loadComponent: () => import('./paginas/detalle/detalle.component').then(m => m.DetalleComponent)
             },
             {
                 path: 'prestamo/:slug',
-                loadComponent: () => import('./views/paginas/prestamo/prestamo').then(m => m.Prestamo)
+                loadComponent: () => import('./paginas/prestamo/prestamo.component').then(m => m.PrestamoComponent)
             },
             {
                 path: 'registrar',
-                component: Registrar
+                component: RegistrarComponent
             },
             {
                 path: 'cuenta',
@@ -49,11 +49,11 @@ export const routes: Routes = [
             },
             {
                 path: 'mis-reservas',
-                component: MisReservas
+                component: MisReservasComponent
             },
             {
                 path: 'faq',
-                loadComponent: () => import('./views/paginas/faq/faq').then(m => m.FaqComponent)
+                loadComponent: () => import('./paginas/faq/faq.component').then(m => m.FaqComponent)
             }
         ]
     },

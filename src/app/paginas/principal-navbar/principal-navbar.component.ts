@@ -3,15 +3,14 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { AuthService } from '../../../services/auth.service';
+import { AuthService } from '../../services/auth.service';
 
 declare var bootstrap: any;
 
 @Component({
   selector: 'app-principal-navbar',
-  templateUrl: './principal-navbar.html',
-  styleUrls: ['./principal-navbar.scss'],
-  standalone: true,
+  templateUrl: './principal-navbar.component.html',
+  styleUrl: './principal-navbar.component.scss',
   imports: [RouterModule, ReactiveFormsModule, CommonModule]
 })
 export class PrincipalNavbarComponent implements OnInit {

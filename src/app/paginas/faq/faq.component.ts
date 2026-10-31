@@ -17,10 +17,9 @@ interface Category {
 
 @Component({
   selector: 'app-faq',
-  standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './faq.html',
-  styleUrls: ['./faq.scss']
+  templateUrl: './faq.component.html',
+  styleUrl: './faq.component.scss'
 })
 export class FaqComponent implements OnInit, AfterViewInit {
   categories: Category[] = [

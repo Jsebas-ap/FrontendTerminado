@@ -1,9 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrincipalNavbarComponent } from './principal-navbar';
-//import { PrincipalNavbar } from './principal-navbar';
+import { PrincipalNavbarComponent } from './principal-navbar.component';
 
-describe('PrincipalNavbar', () => {
+describe('PrincipalNavbarComponent', () => {
   let component: PrincipalNavbarComponent;
   let fixture: ComponentFixture<PrincipalNavbarComponent>;
 

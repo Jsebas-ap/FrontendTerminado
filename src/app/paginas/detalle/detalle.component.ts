@@ -2,18 +2,17 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { LibrosService } from '../../../services/libros.service';
-import { AuthService } from '../../../services/auth.service';
+import { LibrosService } from '../../services/libros.service';
+import { AuthService } from '../../services/auth.service';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-detalle',
-  standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './detalle.html',
-  styleUrl: './detalle.scss'
+  templateUrl: './detalle.component.html',
+  styleUrl: './detalle.component.scss'
 })
-export class Detalle implements OnInit, OnDestroy {
+export class DetalleComponent implements OnInit, OnDestroy {
   libro: any = null;
   ejemplares: any[] = [];
   tieneReservaActiva: boolean = false;

@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { LibrosService } from '../../../services/libros.service';
+import { LibrosService } from '../../services/libros.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterLink, Router, ActivatedRoute } from '@angular/router';
 declare var bootstrap: any;
-import { Libro } from '../../../models/libro.model';
+import { Libro } from '../../models/libro.model';
 
 @Component({
   selector: 'app-catalogo',
-  standalone: true,
   imports: [CommonModule, ReactiveFormsModule, HttpClientModule, RouterLink],
-  templateUrl: './catalogo.html',
-  styleUrls: ['./catalogo.scss']
+  templateUrl: './catalogo.component.html',
+  styleUrl: './catalogo.component.scss'
 })
-export class Catalogo implements OnInit {
+export class CatalogoComponent implements OnInit {
   libros: any[] = [];
   editoriales: string[] = [];
   generos: string[] = [];

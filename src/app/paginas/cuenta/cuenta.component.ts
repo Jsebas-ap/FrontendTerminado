@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router, RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { AuthService } from '../../../services/auth.service';
+import { AuthService } from '../../services/auth.service';
 import { Subscription } from 'rxjs';
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
@@ -11,8 +11,8 @@ registerLocaleData(localeEs);
 
 @Component({
   selector: 'app-cuenta',
-  templateUrl: './cuenta.html',
-  styleUrls: ['./cuenta.scss'],
+  templateUrl: './cuenta.component.html',
+  styleUrl: './cuenta.component.scss',
   imports: [RouterModule, ReactiveFormsModule, CommonModule],
   providers: [{ provide: LOCALE_ID, useValue: 'es' }]
 })

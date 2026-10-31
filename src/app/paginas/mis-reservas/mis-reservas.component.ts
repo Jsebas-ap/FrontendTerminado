@@ -1,6 +1,6 @@
 import { Component, OnInit, LOCALE_ID } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { AuthService } from '../../../services/auth.service';
+import { AuthService } from '../../services/auth.service';
 import { filter, Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
@@ -10,11 +10,11 @@ registerLocaleData(localeEs);
 @Component({
   selector: 'app-mis-reservas',
   imports: [RouterModule, CommonModule],
-  templateUrl: './mis-reservas.html',
-  styleUrl: './mis-reservas.scss',
+  templateUrl: './mis-reservas.component.html',
+  styleUrl: './mis-reservas.component.scss',
   providers: [{ provide: LOCALE_ID, useValue: 'es' }]
 })
-export class MisReservas implements OnInit {
+export class MisReservasComponent implements OnInit {
   usuario: any = null;
   reservas: any[] = [];
   public userSubscription!: Subscription;

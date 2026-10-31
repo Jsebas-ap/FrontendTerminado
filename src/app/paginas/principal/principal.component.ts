@@ -4,12 +4,11 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-principal',
-  standalone: true,
   imports: [FormsModule],
-  templateUrl: './principal.html',
-  styleUrl: './principal.scss'
+  templateUrl: './principal.component.html',
+  styleUrl: './principal.component.scss'
 })
-export class Principal {
+export class PrincipalComponent {
   searchTerm: string = '';
 
   constructor(private router: Router) {}

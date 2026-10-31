@@ -4,16 +4,15 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ToastService } from '../../../services/toast.service';
+import { ToastService } from '../../services/toast.service';
 
 @Component({
   selector: 'app-registrar',
-  templateUrl: './registrar.html',
-  styleUrls: ['./registrar.scss'],
-  standalone: true,
+  templateUrl: './registrar.component.html',
+  styleUrl: './registrar.component.scss',
   imports: [CommonModule, RouterModule, ReactiveFormsModule, HttpClientModule],
 })
-export class Registrar {
+export class RegistrarComponent {
   registroForm: FormGroup;
   error: string | null = null;
    maxFecha = (() => {
