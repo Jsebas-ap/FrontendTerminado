@@ -1,0 +1,182 @@
+import { Component, OnInit, LOCALE_ID } from '@angular/core';
+import { ActivatedRoute, RouterModule, NavigationExtras } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { LibrosService } from '../../services/libros.service';
+import { FormsModule } from '@angular/forms';
+import { AuthService } from '../../services/auth.service';
+import localeEs from '@angular/common/locales/es';
+import { registerLocaleData } from '@angular/common';
+import { Subscription } from 'rxjs';
+import { Ejemplar } from '../../models/ejemplar.model';
+import { ReservasService } from '../../services/reservas.service';
+import { Router } from '@angular/router';
+import { filter, takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
+registerLocaleData(localeEs);
+
+@Component({
+  selector: 'app-prestamo',
+  imports: [CommonModule, RouterModule, FormsModule],
+  templateUrl: './prestamo.component.html',
+  styleUrl: './prestamo.component.scss',
+  providers: [{ provide: LOCALE_ID, useValue: 'es' }]
+})
+export class PrestamoComponent implements OnInit {
+  libro: any = null;
+  usuario: any = null;
+  ejemplar: Ejemplar | null = null;
+  fechaRecojo: string = '';
+  minDate: string;
+  maxDate: string;
+  errorMessage: string | null = null;
+  errorFecha: string | null = null;
+  private userSubscription!: Subscription;
+  isLoading = false;
+  reservaSuccess = false;
+  tieneReservaActiva = false;
+
+  constructor(
+    private route: ActivatedRoute,
+    private librosService: LibrosService,
+    private reservaService: ReservasService,
+    private router: Router,
+    private authService: AuthService
+  ) {
+    const today = new Date();
+    const tomorrow = new Date();
+    const twoWeeksLater = new Date();
+    tomorrow.setDate(today.getDate() + 1);
+    twoWeeksLater.setDate(tomorrow.getDate() + 14);
+
+    this.minDate = this.formatDate(tomorrow);
+    this.maxDate = this.formatDate(twoWeeksLater);
+  }
+
+  ngOnInit(): void {
+    const slug = this.route.snapshot.paramMap.get('slug');
+
+    if (slug) {
+      // Cargar libro
+      this.librosService.getDetallePorSlug(slug).subscribe({
+        next: (data) => {
+          this.libro = data.libro;
+          this.cargarEjemplarDisponible(data.ejemplaresDisponibles);
+        },
+        error: (err) => {
+          console.error('Error cargando libro', err);
+          this.errorMessage = 'Error al cargar el libro';
+        }
+      });
+      //cargar usuario
+      this.userSubscription = this.authService.user$.subscribe({
+        next: (user) => {
+          if (user) {
+            this.usuario = user;
+            this.tieneReservaActiva = user.reservas?.some((r: any) => r.fechaRealDevolucion === null) ?? false;
+          }
+        },
+        error: (err) => {
+          console.error(err);
+        }
+      });
+    }
+  }
+
+  enviarReserva(): void {
+    if (!this.validarFormulario() || !this.ejemplar?.id) return;
+
+    this.isLoading = true;
+
+    const reservaData = {
+      usuarioId: this.usuario.id,
+      ejemplarId: this.ejemplar.id,
+      fechaRecojo: this.fechaRecojo
+    };
+
+    this.reservaService.crearReserva(reservaData).subscribe({
+      next: (reserva) => {
+        this.reservaSuccess = true;
+        this.isLoading = false;
+
+        this.authService.actualizarUsuarioConReserva(reserva);
+      },
+      error: (err) => {
+        console.error('Error creando reserva:', err);
+        this.errorMessage = 'Error al crear la reserva';
+        this.isLoading = false;
+      }
+    });
+  }
+
+  irAMiCuenta() {
+    this.router.navigate(['/cuenta'], {
+      state: { reservaReciente: true }
+    });
+  }
+
+  private validarFormulario(): boolean {
+    if (this.tieneReservaActiva) {
+      alert('Ya tiene una reserva activa o un libro en préstamo. Debe devolverlo o cancelar su reserva pendiente antes de poder reservar otro libro.');
+      return false;
+    }
+
+    if (!this.fechaRecojo) {
+      alert('Por favor seleccione una fecha de recogida');
+      return false;
+    }
+
+    const fechaSeleccionada = new Date(this.fechaRecojo + 'T00:00:00');
+
+    // Verificar domingo
+    if (fechaSeleccionada.getDay() === 0) {
+      alert('La biblioteca no abre los domingos. Por favor seleccione otro día.');
+      return false;
+    }
+
+    const fechaMin = new Date(this.minDate);
+    const fechaMax = new Date(this.maxDate);
+
+    if (fechaSeleccionada < fechaMin || fechaSeleccionada > fechaMax) {
+      alert('La fecha debe estar dentro del rango permitido');
+      return false;
+    }
+
+    return true;
+  }
+
+  cargarEjemplarDisponible(disponibles: any[]): void {
+    if (disponibles.length > 0) {
+      this.ejemplar = disponibles[0];
+    }
+  }
+
+  imprimir(): void {
+    window.print();
+  }
+
+  private formatDate(date: Date): string {
+    const year = date.getFullYear();
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const day = date.getDate().toString().padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  }
+
+  validarFechaDomingo(): void {
+    if (!this.fechaRecojo) return;
+    // Se agrega 'T00:00:00' para evitar desfase de zona horaria
+    const fecha = new Date(this.fechaRecojo + 'T00:00:00');
+    if (fecha.getDay() === 0) {
+      this.errorFecha = 'La biblioteca no abre los domingos. Por favor seleccione otro día.';
+      this.fechaRecojo = '';
+    } else {
+      this.errorFecha = null;
+    }
+  }
+
+  get fechaDevolucion(): string {
+    if (!this.fechaRecojo) return '';
+    const fecha = new Date(this.fechaRecojo + 'T00:00:00');
+    fecha.setDate(fecha.getDate() + 14);
+    return this.formatDate(fecha);
+  }
+}
