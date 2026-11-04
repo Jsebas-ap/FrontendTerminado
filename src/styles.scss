@@ -1,5 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* ────────────────────────────────────────────────────────────────
+   Fondo global de la aplicación
+   Importante: los selectores de elementos globales (html, body) solo
+   funcionan desde este archivo. En los .scss de componentes Angular
+   los encapsula como body[_ngcontent-*] y nunca aplican al <body>
+   real del documento (por eso antes estaban duplicados en varios
+   componentes sin surtir efecto).
+   La imagen vive en public/fondo.png y se sirve en la raíz: /fondo.png
+   ──────────────────────────────────────────────────────────────── */
+html,
+body {
+  min-height: 100vh;
+  background-color: #EEF0F2;
+  background-image: url('/fondo.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Solo en body: si se aplica también a html, body se convierte en
+   contenedor de scroll y el header sticky del navbar deja de funcionar */
 body {
   overflow-x: hidden;
+}
+
+/* Capa blanca semitransparente sobre el fondo */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: -1;
 }

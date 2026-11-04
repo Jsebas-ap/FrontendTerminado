@@ -4,25 +4,6 @@
     display: block;
 }
 
-body {
-    height: 100vh;
-    background-color: #EEF0F2;
-    background-image: url('/public/fondo.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 1;
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(255, 255, 255, 0.4);
-    /* Blanco con menor opacidad */
-    z-index: -1;
-}
-
 /* HEADER STICKY – se aplica al <header> (no al <nav>) porque sticky
    no puede escapar los límites de su padre. El padre de <header> es
    el host del componente (toda la página), así sí tiene espacio. */
