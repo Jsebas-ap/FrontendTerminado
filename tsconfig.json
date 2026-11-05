@@ -18,7 +18,8 @@
     "baseUrl": ".",
     "paths": {
       "@app/*": ["src/app/*"],
-      "@public/*": ["public/*"]
+      "@public/*": ["public/*"],
+      "@env/*": ["src/environments/*"]
     }
   },
   "angularCompilerOptions": {

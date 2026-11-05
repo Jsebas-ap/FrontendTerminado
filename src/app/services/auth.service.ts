@@ -1,14 +1,15 @@
-// auth.service.ts (reemplazar/añadir)
+// auth.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { BehaviorSubject, catchError, map, Observable, tap, throwError } from 'rxjs';
 import { UsuariosService } from './usuarios.service';
 import { MockAuthService } from './mock-auth.service';
+import { environment } from '@env/environment';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  private apiUrl = 'https://api.utpbiblio.dpdns.org/api/auth/login';
+  private apiUrl = `${environment.apiUrl}/auth/login`;
   public userSubject = new BehaviorSubject<any>(this.getUsuario());
   public user$ = this.userSubject.asObservable();
 

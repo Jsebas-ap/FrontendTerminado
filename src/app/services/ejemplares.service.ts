@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Ejemplar, EstadoEjemplar, Ubicacion } from '@app/models/ejemplar.model';
+import { environment } from '@env/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EjemplaresService {
-  private apiUrl = 'https://api.utpbiblio.dpdns.org/api/ejemplares';
-  private ubicacionesUrl = 'https://api.utpbiblio.dpdns.org/api/ubicaciones';
+  private apiUrl = `${environment.apiUrl}/ejemplares`;
+  private ubicacionesUrl = `${environment.apiUrl}/ubicaciones`;
 
   constructor(private http: HttpClient) { }
 

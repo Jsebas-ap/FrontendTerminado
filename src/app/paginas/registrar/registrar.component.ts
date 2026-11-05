@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ToastService } from '@app/services/toast.service';
+import { environment } from '@env/environment';
 
 @Component({
   selector: 'app-registrar',
@@ -46,7 +47,7 @@ export class RegistrarComponent {
       return;
     }
 
-    this.http.post('https://api.utpbiblio.dpdns.org/api/auth/registrar', this.registroForm.value, { responseType: 'text' })
+    this.http.post(`${environment.apiUrl}/auth/registrar`, this.registroForm.value, { responseType: 'text' })
       .subscribe({
         next: () => {
           this.toastService.success('¡Registro exitoso! Ya puede iniciar sesión.');

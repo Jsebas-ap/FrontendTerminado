@@ -3,13 +3,14 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Reserva, EstadoReserva } from '@app/models/reserva.model';
 import { Ejemplar } from '@app/models/ejemplar.model';
+import { environment } from '@env/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ReservasService {
 
-  private apiUrl = 'https://api.utpbiblio.dpdns.org/api/reservas';
+  private apiUrl = `${environment.apiUrl}/reservas`;
 
   constructor(private http: HttpClient) { }
 
@@ -39,7 +40,7 @@ export class ReservasService {
   }
 
   getReservasRecientes(): Observable<Reserva[]> {
-    return this.http.get<Reserva[]>(`${this.apiUrl}/recientes`)
+    return this.http.get<Reserva[]>(`${this.apiUrl}/recientes`);
   }
 
   getReservaPendientePorCodigo(codigoEjemplar: string): Observable<Reserva> {

@@ -3,13 +3,14 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Libro } from '@app/models/libro.model';
 import { Ejemplar } from '@app/models/ejemplar.model';
+import { environment } from '@env/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LibrosService {
-  private apiUrl = 'https://api.utpbiblio.dpdns.org/api/libros';
-  private apiUrlAlt = 'https://api.utpbiblio.dpdns.org/api';
+  private apiUrl = `${environment.apiUrl}/libros`;
+  private apiUrlAlt = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
