@@ -30,4 +30,4 @@ jobs:
           aws-region: us-east-2
 
       - name: Desplegar a S3
-        run: aws s3 sync dist/ s3://proyecto-ate-frontend-2026-010429757104-us-east-2-an --delete
+        run: aws s3 sync dist/frontend-reserva-libros/browser/ s3://proyecto-ate-frontend-2026-010429757104-us-east-2-an --delete
