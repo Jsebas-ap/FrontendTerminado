@@ -2,12 +2,74 @@
     <div class="row mt-4">
         <h2>Lista de Libros</h2>
 
-        <!-- Formulario de Búsqueda -->
-        <div class="mb-3">
-            <div class="input-group">
-                <input type="text" class="form-control" [(ngModel)]="terminoBusqueda"
-                    placeholder="Ingrese el nombre del libro">
-                <button class="btn btn-outline-secondary" type="button" (click)="buscarLibros()">Buscar</button>
+        <!-- Formulario de Filtros (Estilo sobrio dashboard) -->
+        <div class="card mb-3 border bg-light shadow-none">
+            <div class="card-body p-3">
+                <form [formGroup]="filtroForm" (ngSubmit)="filtrar()">
+                    <div class="row g-3 align-items-end">
+
+                        <!-- Título -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <label for="filtro-titulo" class="form-label fw-semibold text-secondary small mb-1">
+                                <i class="bi bi-book me-1"></i> Título
+                            </label>
+                            <input type="text" id="filtro-titulo"
+                                   class="form-control"
+                                   formControlName="titulo"
+                                   placeholder="Buscar por título...">
+                        </div>
+
+                        <!-- Editorial -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <label for="filtro-editorial" class="form-label fw-semibold text-secondary small mb-1">
+                                <i class="bi bi-building me-1"></i> Editorial
+                            </label>
+                            <select id="filtro-editorial"
+                                    class="form-select"
+                                    formControlName="editorial">
+                                <option value="">Todas las editoriales</option>
+                                <option *ngFor="let ed of editoriales" [value]="ed">{{ ed }}</option>
+                            </select>
+                        </div>
+
+                        <!-- Género -->
+                        <div class="col-12 col-md-4 col-lg-2">
+                            <label for="filtro-genero" class="form-label fw-semibold text-secondary small mb-1">
+                                <i class="bi bi-tag me-1"></i> Género
+                            </label>
+                            <select id="filtro-genero"
+                                    class="form-select"
+                                    formControlName="genero">
+                                <option value="">Todos los géneros</option>
+                                <option *ngFor="let gen of generos" [value]="gen">{{ gen }}</option>
+                            </select>
+                        </div>
+
+                        <!-- Orden -->
+                        <div class="col-12 col-md-4 col-lg-2">
+                            <label for="filtro-orden" class="form-label fw-semibold text-secondary small mb-1">
+                                <i class="bi bi-sort-alpha-down me-1"></i> Orden
+                            </label>
+                            <select id="filtro-orden"
+                                    class="form-select"
+                                    formControlName="orden">
+                                <option value="asc">A-Z</option>
+                                <option value="desc">Z-A</option>
+                            </select>
+                        </div>
+
+                        <!-- Botones de Acción -->
+                        <div class="col-12 col-md-4 col-lg-2 d-flex gap-2">
+                            <button type="submit" class="btn btn-primary flex-grow-1">
+                                <i class="bi bi-search me-1"></i> Filtrar
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" (click)="limpiarFiltros()" title="Limpiar filtros">
+                                <i class="bi bi-arrow-counterclockwise me-1"></i> Limpiar
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -49,6 +111,12 @@
                                 (click)="confirmarEliminacion(libro.id, libro.titulo)">
                                 <i class="bi bi-trash"></i> Eliminar
                             </button>
+                        </td>
+                    </tr>
+                    <tr *ngIf="libros.length === 0">
+                        <td [attr.colspan]="authService.isAdmin() ? 9 : 8" class="text-center text-muted py-4">
+                            <i class="bi bi-inbox fs-4 d-block mb-1"></i>
+                            No se encontraron libros que coincidan con los filtros aplicados.
                         </td>
                     </tr>
                 </tbody>

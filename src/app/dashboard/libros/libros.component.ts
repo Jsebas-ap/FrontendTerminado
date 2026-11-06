@@ -1,19 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, ReactiveFormsModule, FormsModule, NgForm } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { LibrosService } from '@app/services/libros.service';
 import { AuthService } from '@app/services/auth.service';
-import { CommonModule } from '@angular/common';
-import { FormsModule, NgForm } from '@angular/forms';
 declare var bootstrap: any;
 
 @Component({
   selector: 'app-libros',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: './libros.component.html',
   styleUrl: './libros.component.scss'
 })
 export class LibrosComponent implements OnInit {
   libros: any[] = [];
-  terminoBusqueda: string = '';
+  editoriales: string[] = [];
+  generos: string[] = [];
+  filtroForm!: FormGroup;
+
   libroEditando: any = null;
   libro = {
     titulo: '',
@@ -27,10 +30,34 @@ export class LibrosComponent implements OnInit {
   };
   submittedEdit = false;
 
-  constructor(private librosService: LibrosService, public authService: AuthService) { }
+  constructor(
+    private fb: FormBuilder,
+    private librosService: LibrosService,
+    public authService: AuthService
+  ) { }
 
   ngOnInit(): void {
+    this.filtroForm = this.fb.group({
+      titulo: [''],
+      editorial: [''],
+      genero: [''],
+      orden: ['asc']
+    });
+
+    this.cargarFiltros();
     this.cargarLibros();
+  }
+
+  cargarFiltros(): void {
+    this.librosService.getEditoriales().subscribe({
+      next: (data) => this.editoriales = data,
+      error: (err) => console.error('Error cargando editoriales', err)
+    });
+
+    this.librosService.getGeneros().subscribe({
+      next: (data) => this.generos = data,
+      error: (err) => console.error('Error cargando géneros', err)
+    });
   }
 
   cargarLibros(): void {
@@ -40,21 +67,43 @@ export class LibrosComponent implements OnInit {
     });
   }
 
+  filtrar(): void {
+    const { titulo, editorial, genero, orden } = this.filtroForm.value;
+
+    this.librosService.getLibrosFiltrados(titulo, editorial, genero, orden).subscribe({
+      next: (data) => this.libros = data,
+      error: (err) => console.error('Error al filtrar libros', err)
+    });
+  }
+
+  limpiarFiltros(): void {
+    this.filtroForm.reset({
+      titulo: '',
+      editorial: '',
+      genero: '',
+      orden: 'asc'
+    });
+    this.cargarLibros();
+  }
+
   buscarLibros(): void {
-    if (this.terminoBusqueda.trim()) {
-      this.librosService.buscarLibros(this.terminoBusqueda).subscribe({
-        next: (data) => this.libros = data,
-        error: (err) => console.error('Error al buscar libros', err)
-      });
+    this.filtrar();
+  }
+
+  recargarDatos(): void {
+    const { titulo, editorial, genero, orden } = this.filtroForm?.value || {};
+    if (titulo || editorial || genero || (orden && orden !== 'asc')) {
+      this.filtrar();
     } else {
       this.cargarLibros();
     }
+    this.cargarFiltros();
   }
 
   guardarLibro(): void {
     this.librosService.crearLibro(this.libro).subscribe({
       next: () => {
-        this.cargarLibros();
+        this.recargarDatos();
         this.resetFormulario();
         const modalElement = document.getElementById('agregarLibro');
         if (modalElement) {
@@ -88,8 +137,7 @@ export class LibrosComponent implements OnInit {
   eliminarLibro(id: number): void {
     this.librosService.eliminarLibro(id).subscribe({
       next: () => {
-        // Actualizar la lista después de eliminar
-        this.cargarLibros();
+        this.recargarDatos();
       },
       error: (err) => {
         console.error('Error al eliminar libro', err);
@@ -130,7 +178,7 @@ export class LibrosComponent implements OnInit {
 
     this.librosService.actualizarLibro(this.libroEditando).subscribe({
       next: () => {
-        this.cargarLibros();
+        this.recargarDatos();
         this.cerrarModalEditar(this.libroEditando.id);
         this.submittedEdit = false;
       },
@@ -140,7 +188,6 @@ export class LibrosComponent implements OnInit {
       }
     });
   }
-
 
   cerrarModalEditar(libroId: number): void {
     const modalElement = document.getElementById(`modalEditar__${libroId}`);
