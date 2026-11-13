@@ -4,7 +4,7 @@ import { provideRouter } from '@angular/router';
 import { of } from 'rxjs';
 
 import { PrestamoComponent } from './prestamo.component';
-import { AuthService } from '@app/services/auth.service';
+import { AuthService } from '@app/core/auth.service';
 
 describe('PrestamoComponent', () => {
   let component: PrestamoComponent;

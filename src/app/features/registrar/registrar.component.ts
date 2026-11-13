@@ -4,7 +4,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ToastService } from '@app/services/toast.service';
+import { ToastService } from '@app/core/toast.service';
 import { environment } from '@env/environment';
 
 @Component({

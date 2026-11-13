@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EjemplaresService } from '@app/features/catalogo/ejemplares.service';
 import { LibrosService } from '@app/features/catalogo/libros.service';
-import { AuthService } from '@app/services/auth.service';
+import { AuthService } from '@app/core/auth.service';
 import { Ejemplar, EstadoEjemplar, Ubicacion } from '@app/models/ejemplar.model';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';

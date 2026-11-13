@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ReservasService } from '@app/features/reservas/reservas.service';
-import { AuthService } from '@app/services/auth.service';
+import { AuthService } from '@app/core/auth.service';
 import { CommonModule } from '@angular/common';
 import { Reserva } from '@app/models/reserva.model';
 import { FormsModule, NgForm } from '@angular/forms';

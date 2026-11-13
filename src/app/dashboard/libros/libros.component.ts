@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { LibrosService } from '@app/features/catalogo/libros.service';
-import { AuthService } from '@app/services/auth.service';
+import { AuthService } from '@app/core/auth.service';
 declare var bootstrap: any;
 
 @Component({

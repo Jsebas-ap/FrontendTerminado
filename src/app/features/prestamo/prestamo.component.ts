@@ -3,7 +3,7 @@ import { ActivatedRoute, RouterModule, NavigationExtras } from '@angular/router'
 import { CommonModule } from '@angular/common';
 import { LibrosService } from '@app/features/catalogo/libros.service';
 import { FormsModule } from '@angular/forms';
-import { AuthService } from '@app/services/auth.service';
+import { AuthService } from '@app/core/auth.service';
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { Subscription } from 'rxjs';

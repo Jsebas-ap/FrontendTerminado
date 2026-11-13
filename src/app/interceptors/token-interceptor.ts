@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpInterceptorFn } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { AuthService } from '@app/services/auth.service';
+import { AuthService } from '@app/core/auth.service';
 
 /**
  * Interceptor funcional moderno para Angular 17+ / 20.
