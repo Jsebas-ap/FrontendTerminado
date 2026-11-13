@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
 import { LibrosComponent } from '@app/dashboard/libros/libros.component';
 import { DashboardComponent } from '@app/dashboard/dashboard/dashboard.component';
-import { PrincipalComponent } from '@app/paginas/principal/principal.component';
+import { PrincipalComponent } from '@app/features/principal/principal.component';
 import { DashboardNavbarComponent } from '@app/dashboard/dashboard-navbar/dashboard-navbar.component';
-import { PrincipalNavbarComponent } from '@app/paginas/principal-navbar/principal-navbar.component';
-import { CatalogoComponent } from '@app/paginas/catalogo/catalogo.component';
-import { DetalleComponent } from '@app/paginas/detalle/detalle.component';
-import { PrestamoComponent } from '@app/paginas/prestamo/prestamo.component';
-import { RegistrarComponent } from '@app/paginas/registrar/registrar.component';
-import { CuentaComponent } from '@app/paginas/cuenta/cuenta.component';
-import { MisReservasComponent } from '@app/paginas/mis-reservas/mis-reservas.component';
+import { PrincipalNavbarComponent } from '@app/features/principal-navbar/principal-navbar.component';
+import { CatalogoComponent } from '@app/features/catalogo/catalogo.component';
+import { DetalleComponent } from '@app/features/detalle/detalle.component';
+import { PrestamoComponent } from '@app/features/prestamo/prestamo.component';
+import { RegistrarComponent } from '@app/features/registrar/registrar.component';
+import { CuentaComponent } from '@app/features/cuenta/cuenta.component';
+import { MisReservasComponent } from '@app/features/mis-reservas/mis-reservas.component';
 import { EjemplaresComponent } from '@app/dashboard/ejemplares/ejemplares.component';
 import { UsuariosComponent } from '@app/dashboard/usuarios/usuarios.component';
 import { ReservasComponent } from '@app/dashboard/reservas/reservas.component';
@@ -33,11 +33,11 @@ export const routes: Routes = [
             },
             {
                 path: 'detalle/:slug',
-                loadComponent: () => import('@app/paginas/detalle/detalle.component').then(m => m.DetalleComponent)
+                loadComponent: () => import('@app/features/detalle/detalle.component').then(m => m.DetalleComponent)
             },
             {
                 path: 'prestamo/:slug',
-                loadComponent: () => import('@app/paginas/prestamo/prestamo.component').then(m => m.PrestamoComponent)
+                loadComponent: () => import('@app/features/prestamo/prestamo.component').then(m => m.PrestamoComponent)
             },
             {
                 path: 'registrar',
@@ -53,7 +53,7 @@ export const routes: Routes = [
             },
             {
                 path: 'faq',
-                loadComponent: () => import('@app/paginas/faq/faq.component').then(m => m.FaqComponent)
+                loadComponent: () => import('@app/features/faq/faq.component').then(m => m.FaqComponent)
             }
         ]
     },
