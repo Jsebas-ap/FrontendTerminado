@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import * as ExcelJS from 'exceljs';
-import { LibrosService } from './libros.service';
+import { LibrosService } from '../catalogo/libros.service';
 import { Libro } from '@app/models/libro.model';
 import { Ejemplar, EstadoEjemplar } from '@app/models/ejemplar.model';
 

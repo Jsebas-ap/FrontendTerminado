@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { LibrosService } from '@app/services/libros.service';
+import { LibrosService } from '@app/features/catalogo/libros.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterLink, Router, ActivatedRoute } from '@angular/router';
 declare var bootstrap: any;

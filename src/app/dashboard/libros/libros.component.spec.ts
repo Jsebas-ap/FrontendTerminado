@@ -3,7 +3,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { of } from 'rxjs';
 
 import { LibrosComponent } from './libros.component';
-import { LibrosService } from '@app/services/libros.service';
+import { LibrosService } from '@app/features/catalogo/libros.service';
 
 describe('LibrosComponent', () => {
   let component: LibrosComponent;

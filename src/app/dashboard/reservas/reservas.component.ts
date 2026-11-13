@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ReservasService } from '@app/services/reservas.service';
+import { ReservasService } from '@app/features/reservas/reservas.service';
 import { AuthService } from '@app/services/auth.service';
 import { CommonModule } from '@angular/common';
 import { Reserva } from '@app/models/reserva.model';

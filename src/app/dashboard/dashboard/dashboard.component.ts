@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuariosService } from '@app/services/usuarios.service';
-import { EjemplaresService } from '@app/services/ejemplares.service';
-import { ReservasService } from '@app/services/reservas.service';
+import { UsuariosService } from '@app/features/usuarios/usuarios.service';
+import { EjemplaresService } from '@app/features/catalogo/ejemplares.service';
+import { ReservasService } from '@app/features/reservas/reservas.service';
 import { Usuario } from '@app/models/usuario.model';
 import { Ejemplar } from '@app/models/ejemplar.model';
 import { Reserva } from '@app/models/reserva.model';
